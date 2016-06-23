@@ -1,4 +1,6 @@
+@import "_mixin";
+@import "_vars";
+
 body {
-	background-color: red;
-	color: white;
+	background-color: $primary;
 }
