@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./server/bin/www"
+    "start": "node ./server/bin/www",
+    "dev": "nodemon server/app.js dev",
+    "dev-babel": "babel-watch server/app.js dev",
+    "build-client": "webpack --config=webpack.production.conf.js",
+    "build-server": "babel server --out-dir dist",
+    "production": "node dist/app.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
