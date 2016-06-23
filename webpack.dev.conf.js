@@ -7,7 +7,7 @@ config.polyfill = 'eventsource-polyfill'
 
 config.output = {
     path: '/',
-    publicPath: 'http://localhost:3005/dist/',
+    publicPath: 'http://localhost:3000/dist/',
     filename: 'all.min.js',
 };
 
