@@ -20,7 +20,7 @@ module.exports = {
                 loader: 'vue',
             }, {
                 test: /\.scss$/,
-                loaders: ["style", "css", "sass"],
+                loader: 'style!css!sass?includePaths[]=./node_modules'
             },
         ],
     },
@@ -28,7 +28,7 @@ module.exports = {
     vue: {
         loaders: {
             js: 'babel',
-            scss: 'style!css!sass',
+            scss: 'style!css!sass?includePaths[]=./node_modules',
             sass: 'style!css!sass?indentedSyntax',
         },
     },
