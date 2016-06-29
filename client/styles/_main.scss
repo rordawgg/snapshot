@@ -1,7 +1,13 @@
 @import "_mixin";
 @import "_vars";
 @import "bootstrap/scss/bootstrap-grid";
+@import "bootstrap/scss/_normalize";
 
 body {
+	font-family: Helvetica, Arial, sans-serif;
 	background-color: $primary;
+}
+
+h1, h2, h3, h4, p, div, i {
+	color: $primary;
 }
