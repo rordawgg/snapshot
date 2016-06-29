@@ -3,5 +3,22 @@
 </style>
 
 <template>
-	<h1>home</h1>
+	<logo-header></logo-header>
+	<project-list></project-list>
 </template>
+
+<script>
+	var ProjectList = require('../ProjectList.vue');
+	var LogoHeader = require('../LogoHeader.vue');
+
+	module.exports = {
+		name: 'Home',
+
+		components: {
+			ProjectList,
+			LogoHeader
+		}
+	}
+
+
+</script>
