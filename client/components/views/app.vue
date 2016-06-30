@@ -14,7 +14,7 @@
 	<div id="cont">
 		<contact v-on:close=' showContact = false' v-if='showContact'></contact>
 
-		<a class='contact-button' href="#">
+		<a class='contact-button' href="#" @click=' showContact = true'>
 			Contact
 		</a>
 		
