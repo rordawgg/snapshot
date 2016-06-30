@@ -3,25 +3,27 @@
 
 	.contact-cont {
 		@include make-container();
-		min-height: 500px;
+		min-height: 200px;
 		color: $primary;
+		background-color: #2E2E2E;
 
 		.contact-info {
 			@include make-row();
-			background-color: #2E2E2E;
+			padding: 60px 0 60px 20px;
 		}
 	}
 </style>
 
 <template>
 	<div class='contact-cont'>
+		<div class="contact-close">
+			<a href='#' @click.prevent='close'>Close</a>
+		</div>
 		<div class='contact-info'>
 			<template v-for='item in items'>
 				<contact-item :item='item'></contact-item>
 			</template>
 		</div>
-
-		<a href="#">Close</a>
 	</div>
 </template>
 
@@ -67,6 +69,12 @@
 						]
 					},
 				]
+			}
+		},
+
+		methods: {
+			close() {
+				this.$dispatch('close');
 			}
 		}
 	}

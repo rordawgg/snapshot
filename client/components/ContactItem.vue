@@ -4,7 +4,9 @@
 	.contact-item {
 		@include make-col();
 		@include make-col-span(12);
-		padding: 20px 0 0 30px;
+		padding-top: 20px;
+		box-sizing: border-box;
+		//@include make-col-offset(2);
 
 		@include media-breakpoint-up(md) {
 			@include make-col-span(3);

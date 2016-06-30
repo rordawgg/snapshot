@@ -4,7 +4,7 @@
 
 <template>
 	<div id="cont">
-		<contact></contact>
+		<contact v-on:close='showContact = false' v-if='showContact'></contact>
 
 		<div id="content">
 			<router-view class="view"></router-view>
@@ -20,6 +20,12 @@
 
 		components: {
 			Contact
+		},
+
+		data() {
+			return {
+				showContact: false
+			}
 		}
 	}
 </script>
