@@ -8,7 +8,7 @@
 
 body {
 	font-family: 'Nunito', Helvetica, Arial, sans-serif;
-	background-color: $primary;
+	background-color: #fff;
 	color: $fontColor;
 	font-size: 16px;
 }
@@ -23,6 +23,10 @@ a {
 	color: $fontColor;
 }
 
-h1, h2, h3, h4, p, div, i {
-	// Set font-weight
+h1, h2, h3, h4, a, p, div, i {
+	font-weight: 300;
+}
+
+p {
+	color: $paraColor;
 }

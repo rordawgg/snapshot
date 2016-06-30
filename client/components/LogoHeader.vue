@@ -1,59 +1,93 @@
 <style lang='scss' scoped>
-	@import '../styles/_main';	
-	
-	.header {
+	@import '../styles/_main';
+
+	.logo {
 		float: left;
 		padding-top: 120px;
-	}
-	/*Media Breakpoint*/
-	.header {
 		padding-left: 10px;
-	}
-	.sub-logo {
-			max-width: 90%;
+
+		.sub-logo {
+			h1 {
+				font-size: 2.5rem;
+				margin: 2px 0 24px 0;
+			}
 		}
-	@include media-breakpoint-up(sm){
-		.header {
+
+		.description {
+			max-width: 90%;
+
+			p {
+				padding-left: 22px;
+				padding-right: 22px;
+			}
+		}
+
+		@include media-breakpoint-between(sm, xl) {
+			.sub-logo {
+				h1 {
+					font-size: 3.75rem;
+				}
+			}
+
+			.description {
+				p {
+					padding-left: 0px;
+					padding-right: 0px;
+				}
+			}
+		};
+
+		@include media-breakpoint-up(sm) {
 			padding-left: 30px;
+
+			.description {
+				max-width: 90%;
+			}
 		}
-		.sub-logo {
-			max-width: 90%;
+
+		@include media-breakpoint-up(md) {
+			padding-left: 86px;
+
+			.description {
+				max-width: 70%;
+			}
 		}
-	}
-	@include media-breakpoint-up(md){
-		.header {
-			padding-left: 90px;
+
+		@include media-breakpoint-up(lg) {
+			padding-left: 117px;
+
+			.description {
+				max-width: 70%;
+			}
 		}
-		.sub-logo {
-			max-width: 70%;
-		}
-	}
-	@include media-breakpoint-up(lg){
-		.header{
-			padding-left: 120px;
-		}
-		.sub-logo {
-			max-width: 70%;
+
+		@include media-breakpoint-up(xl) {
+			padding-left: 202px;
+
+			.description {
+				max-width: 70%;
+			}
 		}
 	}
 </style>
 
 <template>
-	<div class="header">
-		<div class="img-logo">
-			<img src="/img/snapshot_logo.png" alt="Snapshot-Logo">
-		</div>
+	<header>
 		<div class="logo">
 			<div class="main-logo">
-				<h1>Creative</h1>
-				<h1>Technology</h1>
+				<img src="/img/snapshot_logo.png" alt="Snapshot-Logo">
 			</div>
+
 			<div class="sub-logo">
+				<h1>Creative<br>Technologist</h1>
+			</div>
+
+			<div class="description">
 				<p>
 					Lorem ipsum dolor sit amet, atqui audiam graecis has cu. Accusamus comprehensam at eos. Mei in porro instructior, sed no repudiare moderatius.
 				</p>
 			</div>
 
 		</div>
-	</div>
+	</header>
 </template>
