@@ -3,6 +3,7 @@
 	
 	.header {
 		float: left;
+		padding-top: 120px;
 	}
 	/*Media Breakpoint*/
 	.header {

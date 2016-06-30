@@ -1,6 +1,16 @@
 <style lang="scss" scoped>
 	@import '../styles/_main';
 
+	.contact-close{
+		float: right;
+		padding-top: 40px;
+		padding-right: 15px;
+		a{
+			color: white;
+			text-decoration: none;
+			font-size: 1.2rem;
+		}
+	}
 	.contact-cont {
 		@include make-container();
 		min-height: 200px;
