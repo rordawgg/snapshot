@@ -2,7 +2,18 @@
 	@import '../styles/_main';
 
 	.contact-item {
-		//@include make-col();
+		@include make-col();
+		@include make-col-span(12);
+		padding: 20px 0 0 30px;
+
+		@include media-breakpoint-up(md) {
+			@include make-col-span(3);
+			// @include make-col-offset(3);
+		};
+
+		h1 {
+			font-size: .8125rem;
+		}
 	}
 </style>
 

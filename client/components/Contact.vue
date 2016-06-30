@@ -3,10 +3,12 @@
 
 	.contact-cont {
 		@include make-container();
+		min-height: 500px;
+		color: $primary;
 
 		.contact-info {
 			@include make-row();
-			background-color: darken(dimgray, 20%);
+			background-color: #2E2E2E;
 		}
 	}
 </style>
@@ -19,7 +21,7 @@
 			</template>
 		</div>
 
-		<a href="#">Contact</a>
+		<a href="#">Close</a>
 	</div>
 </template>
 
