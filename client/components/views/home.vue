@@ -1,10 +1,12 @@
 <style lang='scss' scoped>
-	@import '../../styles/_main.scss';
+	@import '../../styles/_main';
 </style>
 
 <template>
-	<logo-header></logo-header>
-	<project-list></project-list>
+	<div class="home">
+		<logo-header></logo-header>
+		<project-list></project-list>
+	</div>
 </template>
 
 <script>
