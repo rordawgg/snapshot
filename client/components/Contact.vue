@@ -3,8 +3,8 @@
 
 	.contact-close{
 		float: right;
-		padding-top: 40px;
-		padding-right: 15px;
+		padding-top: 64px;
+		padding-right: 32px;
 		a{
 			color: $primary;
 			text-decoration: none;
@@ -13,13 +13,13 @@
 	}
 	.contact-cont {
 		@include make-container();
-		min-height: 200px;
+		min-height: 358px;
 		color: $primary;
 		background-color: #2E2E2E;
 
 		.contact-info {
 			@include make-row();
-			padding: 60px 0 60px 20px;
+			padding: 135px 0 64px 48px;
 		}
 	}
 </style>
