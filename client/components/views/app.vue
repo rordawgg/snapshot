@@ -18,7 +18,7 @@
 			></contact>
 
 		<div class="contact-open">
-			<a class='contact-button' href="#" @click='showContact = true'>Contact</a>
+			<a class='contact-button' href="#" @click.prevent='showContact = true'>Contact</a>
 		</div>
 
 		<div id="content">

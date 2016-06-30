@@ -3,8 +3,8 @@
 
 	.contact-close{
 		float: right;
-		padding-top: 64px;
-		padding-right: 32px;
+		padding-top: 61px;
+		padding-right: 92px;
 		a{
 			color: $primary;
 			text-decoration: none;
