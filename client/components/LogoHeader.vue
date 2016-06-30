@@ -31,6 +31,7 @@
 
 			.description {
 				p {
+					font-size: .9375rem;
 					padding-left: 0px;
 					padding-right: 0px;
 				}
