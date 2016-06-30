@@ -2,9 +2,12 @@
 @import "_vars";
 @import "bootstrap/scss/bootstrap-grid";
 @import "bootstrap/scss/_normalize";
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+
 
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Nunito', Helvetica, Arial, sans-serif;
 	background-color: $primary;
 	color: $fontColor;
 	font-size: 16px;
