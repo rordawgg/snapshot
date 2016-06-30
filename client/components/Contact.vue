@@ -14,14 +14,27 @@
 	.contact-cont {
 		@include make-container();
 		min-height: 358px;
+		position: fixed;
+		width: 100%;
+		min-height: 200px;
 		color: $primary;
 		background-color: #2E2E2E;
+		z-index: 1005;
+		transition: 300ms;
 
 		.contact-info {
 			@include make-row();
 			padding: 135px 0 64px 48px;
 		}
 	}
+
+.slide-transition {
+	top: 0px;
+}
+
+.slide-enter, .slide-leave {
+	top: -500px;
+}
 </style>
 
 <template>

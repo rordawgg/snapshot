@@ -15,6 +15,11 @@ ul {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+	color: $fontColor;
+}
+
 h1, h2, h3, h4, p, div, i {
 	// Set font-weight
 }

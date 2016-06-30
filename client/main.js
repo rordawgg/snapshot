@@ -20,5 +20,8 @@ router.map({
 	}
 });
 
-router.start(App, "#app");
+router.redirect({
+	'*': '/home'
+});
 
+router.start(App, "#app");

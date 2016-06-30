@@ -2,21 +2,24 @@
 	@import '../../styles/_main';
 
 	.contact-button {
-		float: right;
-		padding: 20px 20px;
-		text-decoration: none;
-		color: inherit;
+		position: absolute;
+		top: 13px;
+		right: 15px;
 		font-size: 1.125rem;
 	}
 </style>
 
 <template>
 	<div id="cont">
-		<contact v-on:close=' showContact = false' v-if='showContact'></contact>
+		<contact
+			v-on:close=' showContact = false'
+			v-if='showContact'
+			transition='slide'
+			></contact>
 
-		<a class='contact-button' href="#" @click=' showContact = true'>
-			Contact
-		</a>
+		<div class="contact-open">
+			<a class='contact-button' href="#" @click='showContact = true'>Contact</a>
+		</div>
 
 		<div id="content">
 			<router-view class="view"></router-view>
