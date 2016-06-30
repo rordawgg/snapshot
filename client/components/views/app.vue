@@ -6,7 +6,7 @@
 		padding: 20px 20px;
 		text-decoration: none;
 		color: inherit;
-		font-size: 1.75rem;
+		font-size: 1.125rem;
 	}
 </style>
 
@@ -17,7 +17,7 @@
 		<a class='contact-button' href="#" @click=' showContact = true'>
 			Contact
 		</a>
-		
+
 		<div id="content">
 			<router-view class="view"></router-view>
 		</div>

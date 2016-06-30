@@ -6,11 +6,9 @@
 		@include make-col-span(12);
 		padding-top: 20px;
 		box-sizing: border-box;
-		//@include make-col-offset(2);
 
 		@include media-breakpoint-up(md) {
 			@include make-col-span(3);
-			// @include make-col-offset(3);
 		};
 
 		h1 {
