@@ -1,3 +1,2 @@
 <template>
-	stuff here
 </template>
