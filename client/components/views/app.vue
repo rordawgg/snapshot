@@ -15,13 +15,13 @@
 			v-on:close=' showContact = false'
 			v-if='showContact'
 			transition='slide'
-			></contact>
+		></contact>
 
 		<div class="contact-open">
 			<a class='contact-button' href="#" @click.prevent='showContact = true'>Contact</a>
 		</div>
 
-		<div id="content">
+		<div id="content" @click.prevent='showContact = false'>
 			<router-view class="view"></router-view>
 		</div>
 	</div>
