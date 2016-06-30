@@ -6,7 +6,7 @@
 		padding-top: 40px;
 		padding-right: 15px;
 		a{
-			color: white;
+			color: $primary;
 			text-decoration: none;
 			font-size: 1.2rem;
 		}
