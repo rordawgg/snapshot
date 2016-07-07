@@ -1,7 +1,7 @@
 <style lang='scss' scoped>
 	@import '../styles/_main';
-	.project-item{
-		background: #fff url('http://lorempixel.com/400/200') no-repeat center center;
+	.project-item {
+		background: #fff no-repeat center center;
 		background-size: cover;
 		box-sizing: border-box;
 		height: 219px;
@@ -10,21 +10,22 @@
 		@include make-col-span(12);
 
 		@include media-breakpoint-between(sm,xl) {
-			@include make-col-span(6);	
-			
+			@include make-col-span(6);
+
 		}
 
-		.project-name{
+		.project-name {
 			color: $primary;
 			opacity: 0;
 			font-size: 2.5rem;
 			text-align: center;
 			position: relative;
-			transform: translateY(-50%); 
+			transform: translateY(-50%);
 			top: 50%;
+			transition: 100ms;
 		}
-		&:hover{
-			.project-name{
+		&:hover {
+			.project-name {
 				opacity: 1;
 			}
 		}
@@ -47,14 +48,32 @@
 <template>
 	<div class="project-item">
 		<div class="project-name">
-			<span>Project Name</span>
+			<span>{{ name }}</span>
 		</div>
-		
+
 	</div>
 </template>
 
 <script>
 	module.exports = {
-		name: 'ProjectItem'
+		name: 'ProjectItem',
+
+		props: [
+			'name',
+			'path',
+			'color'
+		],
+
+		data() {
+			return {
+				style: {}
+			}
+		},
+
+		ready() {
+		 this.$set('style', {
+			 backgroundImage: this.path
+		 });
+		}
 	}
 </script>

@@ -21,12 +21,13 @@
 <template>
   <div class='project-list'>
     <div class='list'>
-      <project-item></project-item>
-      <project-item></project-item>
-      <project-item></project-item>
-      <project-item></project-item>
-      <project-item></project-item>
-      <project-item></project-item>
+      <template v-for='project in projects'>
+        <project-item
+          :name='project.name'
+          :path='project.path'
+          :color='project.color'
+        ></project-item>
+      </template>
     </div>
   </div>
 </template>
@@ -39,6 +40,43 @@
 
     components: {
       ProjectItem
+    },
+
+    data() {
+      return {
+        projects: [
+          {
+            name: 'Sunday Afternoons',
+            path: '/img/sunday_afternoons.jpg',
+            color: 'red'
+          },
+          {
+            name: 'Rouge Valley Door',
+            path: '/img/rouge_valley_door.jpg',
+            color: 'brown'
+          },
+          {
+            name: 'Kamp',
+            path: '/img/i_love_kamping.jpg',
+            color: 'green'
+          },
+          {
+            name: 'Camp too',
+            path: '/img/i_hate_camping.jpg',
+            color: 'orange'
+          },
+          {
+            name: 'Woman Reading With a Gameboy',
+            path: '/img/gameboy.jpg',
+            color: 'black'
+          },
+          {
+            name: 'Addidas',
+            path: '/img/addidas.jpg',
+            color: 'blue'
+          }
+        ]
+      }
     }
   }
 </script>
