@@ -11,13 +11,17 @@
 
 		@include media-breakpoint-between(sm,xl) {
 			@include make-col-span(6);	
+			
 		}
 
 		.project-name{
-			margin: auto 0 auto 0;
 			color: $primary;
 			opacity: 0;
+			font-size: 2.5rem;
 			text-align: center;
+			position: relative;
+			transform: translateY(-50%); 
+			top: 50%;
 		}
 		&:hover{
 			.project-name{
@@ -25,6 +29,7 @@
 			}
 		}
 
+		/*Break points for different screen sizes*/
 		@include media-breakpoint-up(md) {
 			height: 260px;
 		}
@@ -42,7 +47,7 @@
 <template>
 	<div class="project-item">
 		<div class="project-name">
-			<h1>Project Name</h1>
+			<span>Project Name</span>
 		</div>
 		
 	</div>

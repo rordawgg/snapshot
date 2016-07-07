@@ -12,7 +12,7 @@
       @include make-row();
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
 			width: 94%;
 		}
   }
