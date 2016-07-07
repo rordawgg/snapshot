@@ -5,7 +5,7 @@
 		float: right;
 		padding-top: 61px;
 		padding-right: 92px;
-		a{
+		a {
 			color: $primary;
 			text-decoration: none;
 			font-size: 1.2rem;
@@ -14,13 +14,14 @@
 	.contact-cont {
 		@include make-container();
 		min-height: 358px;
-		position: fixed;
+		position: absolute;
 		width: 100%;
 		min-height: 200px;
 		color: $primary;
 		background-color: #2E2E2E;
 		z-index: 1005;
 		transition: 300ms;
+		top: 0;
 
 		.contact-info {
 			@include make-row();
@@ -30,10 +31,11 @@
 
 .slide-transition {
 	top: 0px;
+	transform: translateY(0);
 }
 
 .slide-enter, .slide-leave {
-	top: -500px;
+	transform: translateY(-100%);
 }
 </style>
 

@@ -5,15 +5,24 @@
     @include make-container();
     width: 100%;
     margin-top: 54px;
+    margin-bottom: 54px;
     box-sizing: border-box;
-    background-color: red;
 
     .list {
       @include make-row();
     }
 
+    @include media-breakpoint-up(md) {
+			margin-top: 56px
+		}
+
     @include media-breakpoint-up(lg) {
 			width: 94%;
+      margin-top: 79px;
+		}
+
+    @include media-breakpoint-up(xl) {
+			margin-top: 124px;
 		}
   }
 </style>

@@ -1,7 +1,7 @@
 <style lang='scss' scoped>
 	@import '../styles/_main';
 	.project-item {
-		background: black no-repeat center center;
+		background: no-repeat center center;
 		background-size: cover;
 		box-sizing: border-box;
 		height: 219px;

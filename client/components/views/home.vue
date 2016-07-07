@@ -1,5 +1,9 @@
 <style lang='scss' scoped>
 	@import '../../styles/_main';
+
+	.home {
+		overflow: hidden;
+	}
 </style>
 
 <template>
