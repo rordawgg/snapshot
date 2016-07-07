@@ -17,8 +17,8 @@
 		name: 'Home',
 
 		components: {
-			ProjectList,
-			LogoHeader
+			LogoHeader,
+			ProjectList
 		}
 	}
 

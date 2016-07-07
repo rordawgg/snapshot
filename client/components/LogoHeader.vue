@@ -2,7 +2,6 @@
 	@import '../styles/_main';
 
 	.logo {
-		float: left;
 		padding-top: 120px;
 		padding-left: 10px;
 
