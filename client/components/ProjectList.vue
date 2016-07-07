@@ -11,6 +11,10 @@
     .list {
       @include make-row();
     }
+
+    @include media-breakpoint-up(md) {
+			width: 94%;
+		}
   }
 </style>
 
