@@ -47,32 +47,32 @@
         projects: [
           {
             name: 'Sunday Afternoons',
-            path: '/img/sunday_afternoons.jpg',
+            path: '/img/sunday_afternoons.png',
             color: 'red'
           },
           {
             name: 'Rouge Valley Door',
-            path: '/img/rouge_valley_door.jpg',
+            path: '/img/rouge_valley_door.png',
             color: 'brown'
           },
           {
             name: 'Kamp',
-            path: '/img/i_love_kamping.jpg',
+            path: '/img/kamp.png',
             color: 'green'
           },
           {
             name: 'Camp too',
-            path: '/img/i_hate_camping.jpg',
+            path: '/img/camp.png',
             color: 'orange'
           },
           {
             name: 'Woman Reading With a Gameboy',
-            path: '/img/gameboy.jpg',
+            path: '/img/woman.png',
             color: 'black'
           },
           {
             name: 'Addidas',
-            path: '/img/addidas.jpg',
+            path: '/img/addidas.png',
             color: 'blue'
           }
         ]

@@ -1,10 +1,23 @@
 <style lang='scss' scoped>
 	@import '../styles/_main';
 	.project-item {
-		background: #fff no-repeat center center;
+		background: black no-repeat center center;
 		background-size: cover;
 		box-sizing: border-box;
 		height: 219px;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			opacity: 0;
+			transition: 100ms;
+		}
 
 		@include make-col();
 		@include make-col-span(12);
@@ -28,6 +41,10 @@
 			.project-name {
 				opacity: 1;
 			}
+
+			&:before {
+				opacity: .2;
+			}
 		}
 
 		/*Break points for different screen sizes*/
@@ -46,7 +63,7 @@
 </style>
 
 <template>
-	<div class="project-item">
+	<div v-bind:style='style' class="project-item">
 		<div class="project-name">
 			<span>{{ name }}</span>
 		</div>
@@ -72,7 +89,7 @@
 
 		ready() {
 		 this.$set('style', {
-			 backgroundImage: this.path
+			 backgroundImage: 'url(' + this.path + ')'
 		 });
 		}
 	}
