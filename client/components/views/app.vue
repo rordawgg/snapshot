@@ -7,6 +7,10 @@
 		right: 15px;
 		font-size: 1.125rem;
 	}
+
+	#content{
+		transition: 150ms; 
+	}
 </style>
 
 <template>
@@ -21,7 +25,7 @@
 			<a class='contact-button' href="#" @click.prevent='showContact = true'>Contact</a>
 		</div>
 
-		<div id="content" @click.prevent='showContact = false'>
+		<div id="content" @click.prevent='showContact = false' v-bind:style='{backgroundColor: bgColor}'>
 			<router-view class="view"></router-view>
 		</div>
 	</div>
@@ -39,8 +43,19 @@
 
 		data() {
 			return {
-				showContact: false
+				showContact: false,
+				bgColor: '#fff'
 			}
+		},
+
+		events: {
+			changeBg (color){
+				this.$set('bgColor', color);
+			},
+			resetBg(){
+				this.$set('bgColor', '#fff');
+			}
+			
 		}
 	}
 </script>

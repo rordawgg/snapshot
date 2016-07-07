@@ -63,15 +63,18 @@
 </style>
 
 <template>
-	<div v-bind:style='style' class="project-item">
-		<div class="project-name">
-			<span>{{ name }}</span>
-		</div>
+	<a href="#">
+		<div v-bind:style='style' class='project-item' v-on:mouseover="$dispatch('changeBg', color)" v-on:mouseout="$dispatch('resetBg')" >
+			<div class='project-name'>
+				<span>{{ name }}</span>
+			</div>
 
-	</div>
+		</div>
+	</a>
 </template>
 
 <script>
+
 	module.exports = {
 		name: 'ProjectItem',
 

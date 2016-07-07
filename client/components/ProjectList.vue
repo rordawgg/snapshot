@@ -48,32 +48,32 @@
           {
             name: 'Sunday Afternoons',
             path: '/img/sunday_afternoons.png',
-            color: 'red'
+            color: 'rgb(162, 168, 170)'
           },
           {
             name: 'Rouge Valley Door',
             path: '/img/rouge_valley_door.png',
-            color: 'brown'
+            color: 'rgb(171, 169, 162)'
           },
           {
-            name: 'Kamp',
+            name: 'Kamp Grizzly',
             path: '/img/kamp.png',
-            color: 'green'
+            color: 'rgb(128, 128, 128)'
           },
           {
-            name: 'Camp too',
+            name: 'Dolly Varden',
             path: '/img/camp.png',
-            color: 'orange'
+            color: 'rgb(169, 171, 167)'
           },
           {
-            name: 'Woman Reading With a Gameboy',
+            name: 'Mitsubishi Electric',
             path: '/img/woman.png',
-            color: 'black'
+            color: 'rgb(188, 188, 188)'
           },
           {
-            name: 'Addidas',
+            name: 'Addidas Top Ten',
             path: '/img/addidas.png',
-            color: 'blue'
+            color: 'rgb(177, 183, 186)'
           }
         ]
       }
