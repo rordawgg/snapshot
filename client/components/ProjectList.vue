@@ -35,6 +35,8 @@
           :name='project.name'
           :path='project.path'
           :color='project.color'
+          :slug='project.slug'
+
         ></project-item>
       </template>
     </div>
@@ -57,32 +59,38 @@
           {
             name: 'Sunday Afternoons',
             path: '/img/sunday_afternoons.png',
-            color: 'rgb(162, 168, 170)'
+            color: 'rgb(162, 168, 170)',
+            slug: 'sunday-afternoons'
           },
           {
             name: 'Rouge Valley Door',
             path: '/img/rouge_valley_door.png',
-            color: 'rgb(171, 169, 162)'
+            color: 'rgb(171, 169, 162)',
+            slug: 'rouge-valley-door'
           },
           {
             name: 'Kamp Grizzly',
             path: '/img/kamp.png',
-            color: 'rgb(128, 128, 128)'
+            color: 'rgb(128, 128, 128)',
+            slug: 'kamp-grizzly'
           },
           {
             name: 'Dolly Varden',
             path: '/img/camp.png',
-            color: 'rgb(169, 171, 167)'
+            color: 'rgb(169, 171, 167)',
+            slug: 'dolly-varden'
           },
           {
             name: 'Mitsubishi Electric',
             path: '/img/woman.png',
-            color: 'rgb(188, 188, 188)'
+            color: 'rgb(188, 188, 188)',
+            slug: 'mitsubishi-electric'
           },
           {
             name: 'Addidas Top Ten',
             path: '/img/addidas.png',
-            color: 'rgb(177, 183, 186)'
+            color: 'rgb(177, 183, 186)',
+            slug: 'addidas-top-ten'
           }
         ]
       }
