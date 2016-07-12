@@ -64,7 +64,12 @@
 
 <template>
 	<a v-link="{ path: 'projects/' + slug }">
-		<div v-bind:style='style' class='project-item' v-on:mouseover="$dispatch('changeBg', color)" v-on:mouseout="$dispatch('resetBg')" >
+		<div
+			v-bind:style='style'
+			class='project-item'
+			v-on:mouseover="$dispatch('changeBg', color)"
+			v-on:mouseout="$dispatch('resetBg')" >
+
 			<div class='project-name'>
 				<span>{{ name }}</span>
 			</div>

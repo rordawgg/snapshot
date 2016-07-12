@@ -9,7 +9,7 @@
 	}
 
 	#content{
-		transition: 150ms; 
+		transition: 150ms;
 	}
 </style>
 
@@ -22,7 +22,7 @@
 		></contact>
 
 		<div class="contact-open">
-			<a class='contact-button' href="#" @click.prevent='showContact = true'>Contact</a>
+			<a class='contact-button' href="#" v-bind:style='{color: color}' @click.prevent='showContact = true'>Contact</a>
 		</div>
 
 		<div id="content" @click.prevent='showContact = false' v-bind:style='{backgroundColor: bgColor}'>
@@ -44,7 +44,8 @@
 		data() {
 			return {
 				showContact: false,
-				bgColor: '#fff'
+				bgColor: '#fff',
+				color: '#000'
 			}
 		},
 
@@ -52,10 +53,18 @@
 			changeBg (color){
 				this.$set('bgColor', color);
 			},
+
 			resetBg(){
 				this.$set('bgColor', '#fff');
+			},
+
+			color(color) {
+				this.$set('color', color);
+			},
+
+			showContact() {
+				this.$set('showContact', true);
 			}
-			
 		}
 	}
 </script>
