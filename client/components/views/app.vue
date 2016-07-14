@@ -16,7 +16,7 @@
 <template>
 	<div id="cont">
 		<contact
-			v-on:close=' showContact = false'
+			v-on:close='showContact = false'
 			v-if='showContact'
 			transition='slide'
 		></contact>
@@ -25,7 +25,7 @@
 			<a class='contact-button' href="#" v-bind:style='{color: color}' @click.prevent='showContact = true'>Contact</a>
 		</div>
 
-		<div id="content" @click.prevent='showContact = false' v-bind:style='{backgroundColor: bgColor}'>
+		<div id="content" @click='showContact = false;' v-bind:style='{backgroundColor: bgColor}'>
 			<router-view class="view"></router-view>
 		</div>
 	</div>

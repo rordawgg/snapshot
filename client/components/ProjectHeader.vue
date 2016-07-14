@@ -60,7 +60,7 @@
     </div>
 
     <div class="contact-open">
-      <a class='contact-button' href="#" @click.prevent='$dispatch("showContact")'>Contact</a>
+      <a class='contact-button' href="/" v-on:click.stop.prevent='$dispatch("showContact")'>Contact</a>
     </div>
 
     <div v-bind:style='styles' class='project-header'>
