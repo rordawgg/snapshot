@@ -28,7 +28,6 @@
       background: #000 no-repeat center center;
       background-size: cover;
 
-
       &:before {
         content: '';
         display: block;
@@ -40,12 +39,40 @@
         height: 100%;
         opacity: .2;
       }
-
       .project-name {
         position: absolute;
         bottom: 51px;
         left: 36px;
-        width: 60%;
+        width: 75%;
+      }
+    }
+    @include media-breakpoint-up(xs){
+      .project-name{
+        font-size: 2.1875rem
+      }
+    }
+    @include media-breakpoint-up(md) {
+      .project-header{
+        height: 388px;
+      }
+      .project-name{
+        font-size: 3.75rem;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      .project-header{
+        width: 94.758%;
+        height: 474px;
+        float: none;
+        margin: 0 auto;
+        margin-top: 36px;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      .project-header{
+        width:1270;
+        height: 480;
+        margin-top: 40px;
       }
     }
   }
@@ -65,7 +92,7 @@
 
     <div v-bind:style='styles' class='project-header'>
       <div class='project-name'>
-        <h1>{{ name }}</h1>
+        <span>{{ name }}</span>
       </div>
     </div>
   </header>

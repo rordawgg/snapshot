@@ -7,3 +7,17 @@ $rvd-primary: rgb(171, 169, 162);
 $dolly-primary: rgb(169, 171, 167);
 $mits-primary: rgb(188, 188, 188);
 $kamp-primary: rgb(128, 128, 128);
+
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 544px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1350px
+) !default;
