@@ -80,17 +80,15 @@
 
 <template>
   <header>
-    <div class='back-button'>
-      <a v-link="'/home'">
-        <img src='/img/back-arrow.png' alt='back' />
-      </a>
-    </div>
-
-    <div class="contact-open">
-      <a class='contact-button' href="/" v-on:click.stop.prevent='$dispatch("showContact")'>Contact</a>
-    </div>
-
     <div v-bind:style='styles' class='project-header'>
+      <div class='back-button'>
+        <a v-link="'/home'">
+          <img src='/img/back-arrow.png' alt='back' />
+        </a>
+      </div>
+      <div class="contact-open">
+        <a class='contact-button' href="/" v-on:click.stop.prevent='$dispatch("showContact")'>Contact</a>
+      </div>
       <div class='project-name'>
         <span>{{ name }}</span>
       </div>
