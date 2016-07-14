@@ -20,6 +20,10 @@
 	module.exports = {
 		name: 'Home',
 
+		ready(){
+			this.$dispatch('openContactOpen')
+		},
+
 		components: {
 			LogoHeader,
 			ProjectList

@@ -26,6 +26,10 @@
 			ProjectHeader
 		},
 
+		ready(){
+			this.$dispatch("closeContactOpen");
+		},
+
 	data() {
 		return {
 			name: 'Sunday Afternoons',
@@ -33,10 +37,6 @@
 			color: 'rgb(162, 168, 170)',
 			hero: '/img/sunday-afternoons-hero.png'
 		}
-	},
-
-	ready() {
-		this.$dispatch('color', '#fff');
 	}
 }
 </script>

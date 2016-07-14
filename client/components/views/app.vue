@@ -21,11 +21,11 @@
 			transition='slide'
 		></contact>
 
-		<div class="contact-open">
+		<div class="contact-open" v-show="contactOpen">
 			<a class='contact-button' href="#" v-bind:style='{color: color}' @click.prevent='showContact = true'>Contact</a>
 		</div>
 
-		<div id="content" @click='showContact = false;' v-bind:style='{backgroundColor: bgColor}'>
+		<div id="content" @click='showContact = false;'  v-bind:style='{backgroundColor: bgColor}'>
 			<router-view class="view"></router-view>
 		</div>
 	</div>
@@ -45,7 +45,7 @@
 			return {
 				showContact: false,
 				bgColor: '#fff',
-				color: '#000'
+				contactOpen: true
 			}
 		},
 
@@ -58,12 +58,14 @@
 				this.$set('bgColor', '#fff');
 			},
 
-			color(color) {
-				this.$set('color', color);
-			},
-
-			showContact() {
+			showContact(){
 				this.$set('showContact', true);
+			},
+			closeContactOpen(){
+				this.$set('contactOpen', false);
+			},
+			openContactOpen(){
+				this.$set('contactOpen', true);
 			}
 		}
 	}

@@ -2,6 +2,7 @@
   @import '../styles/_main';
 
   header {
+
     @include make-row();
 
     .back-button {
@@ -60,19 +61,19 @@
       }
     }
     @include media-breakpoint-up(lg) {
+      padding-top: 36px;
       .project-header{
         width: 94.758%;
         height: 474px;
         float: none;
         margin: 0 auto;
-        margin-top: 36px;
       }
     }
     @include media-breakpoint-up(xl) {
+      padding-top: 40px;
       .project-header{
         width:1270;
         height: 480;
-        margin-top: 40px;
       }
     }
   }
