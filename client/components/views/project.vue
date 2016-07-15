@@ -59,37 +59,23 @@
 							"effect": "none",
 							"span": "md"
 						},
-
+						{
+							"path": "http://placehold.it/768x678/",
+							"alt": "image",
+							"effect": "none",
+							"span": "lg"
+						},
 						{
 							"path": "http://placehold.it/768x678/",
 							"alt": "image",
 							"effect": "none",
 							"span": "md"
-						}
-					]
-				},
-
-				{
-					"type": "grid",
-					"content": [
-						{
-							"path": "http://placehold.it/768x678/",
-							"alt": "image",
-							"effect": "none",
-							"span": "sm"
-						},
-
-						{
-							"path": "http://placehold.it/768x678/",
-							"alt": "image",
-							"effect": "none",
-							"span": "sm"
 						},
 						{
 							"path": "http://placehold.it/768x678/",
 							"alt": "image",
 							"effect": "none",
-							"span": "sm"
+							"span": "md"
 						}
 					]
 				},

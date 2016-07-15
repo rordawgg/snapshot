@@ -4,6 +4,11 @@
   .content-section {
     @include make-row();
     overflow: hidden;
+    margin: 0 -8vw;
+
+    &.paragraph {
+      margin: 0;
+    }
 
     .section-image-cont {
       @include make-col();
@@ -12,50 +17,88 @@
       // display: inline-block;
       vertical-align: middle;
       margin: 30px auto;
+      padding: 0 8vw;
       // text-align: center;
-      padding: 0;
 
-      .foo {
-        @include make-col-offset(0);
-      }
-
-      &:first-child {
-        @extend .foo;
-      }
 
       &.sm {
-        @include make-col-offset(1);
-        @include make-col-span(3.6);
+        //@include make-col-offset(1);
+        @include make-col-span(4);
       }
 
       &.md {
         // &.left-gutter {
         //   @include make-col-offset(1);
         // }
-
-        & + .sm {
-          @extend .foo;
-        }
-
-        @include make-col-span(5.5);
-
-        & + .sm {
-          @extend .foo;
-        }
+        @include make-col-span(6);
       }
 
       &.lg {
         @include make-col-span(12);
-
-        & + .sm {
-          @extend .foo;
-        }
       }
 
       img {
         width: 100%;
       }
     }
+
+    // .section-image-cont {
+    //   @include make-col();
+    //   box-sizing: border-box;
+    //   // float: none;
+    //   // display: inline-block;
+    //   vertical-align: middle;
+    //   margin: 30px auto;
+    //   // text-align: center;
+    //   padding: 0;
+    //   @include make-col-offset(1);
+    //
+    //   .foo {
+    //     @include make-col-offset(0);
+    //   }
+    //
+    //   &:first-child {
+    //     @extend .foo;
+    //     @include make-col-offset(0);
+    //   }
+    //
+    //   &.sm {
+    //     //@include make-col-offset(1);
+    //     @include make-col-span(3.33);
+    //
+    //     &:nth-of-type(3n + 1) {
+    //       @include make-col-offset(0);
+    //     }
+    //   }
+    //
+    //   &.md {
+    //     // &.left-gutter {
+    //     //   @include make-col-offset(1);
+    //     // }
+    //     @include make-col-span(5.5);
+    //
+    //     &:nth-of-type(2n + 1) {
+    //       @include make-col-offset(0);
+    //     }
+    //
+    //     & + .sm {
+    //       @include make-col-offset(0);
+    //     }
+    //   }
+    //
+    //   &.lg {
+    //     @include make-col-span(12);
+    //     @include make-col-offset(0);
+    //
+    //     & + .sm, & + .md {
+    //       @include make-col-offset(0);
+    //     }
+    //   }
+    //
+    //   img {
+    //     width: 100%;
+    //   }
+    // }
 
 
     &.grid, &.full {
@@ -72,17 +115,9 @@
     <template v-if='type == "grid"'>
       <template v-for='(i, image) in content'>
 
-        <!-- <template v-if='(i + 1) % 2 === 0'>
-          <div class='section-image-cont left-gutter' v-bind:class='image.span'>
-            <img v-bind:src='image.path' v-bind:alt='image.alt' />
-          </div>
-        </template> -->
-
-        <!-- <template> -->
-          <span class='section-image-cont' v-bind:class='image.span'>
-            <img v-bind:src='image.path' v-bind:alt='image.alt' />
-          </span>
-      <!-- </template> -->
+        <div class='section-image-cont' v-bind:class='image.span'>
+          <img v-bind:src='image.path' v-bind:alt='image.alt' />
+        </div>
 
 
       </template>

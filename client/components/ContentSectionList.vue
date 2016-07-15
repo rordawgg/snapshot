@@ -4,6 +4,7 @@
   .content-section-list {
     @include make-container();
     width: 78%;
+    
   }
 </style>
 
