@@ -63,7 +63,7 @@
             slug: 'sunday-afternoons'
           },
           {
-            name: 'Rouge Valley Door',
+            name: 'Rogue Valley Door',
             path: '/img/rouge_valley_door.png',
             color: 'rgb(171, 169, 162)',
             slug: 'rouge-valley-door'
@@ -87,7 +87,7 @@
             slug: 'mitsubishi-electric'
           },
           {
-            name: 'Addidas Top Ten',
+            name: 'Adidas Top Ten',
             path: '/img/addidas.png',
             color: 'rgb(177, 183, 186)',
             slug: 'addidas-top-ten'
