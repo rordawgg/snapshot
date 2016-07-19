@@ -13,7 +13,7 @@
     }
 
     @include media-breakpoint-up(md) {
-			margin-top: 56px
+			margin-top: 56px;
 		}
 
     @include media-breakpoint-up(lg) {
@@ -23,6 +23,7 @@
 
     @include media-breakpoint-up(xl) {
 			margin-top: 124px;
+      width: 970px;
 		}
   }
 </style>

@@ -4,7 +4,10 @@
   .content-section-list {
     @include make-container();
     width: 78%;
-    
+
+    @include media-breakpoint-up(xl) {
+		  width: 970px;
+		}
   }
 </style>
 

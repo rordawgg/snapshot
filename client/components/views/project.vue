@@ -54,28 +54,22 @@
 					"type": "grid",
 					"content": [
 						{
-							"path": "http://placehold.it/768x678/",
+							"path": "http://placehold.it/283x393/",
 							"alt": "image",
 							"effect": "none",
 							"span": "md"
 						},
 						{
-							"path": "http://placehold.it/768x678/",
+							"path": "http://placehold.it/283x393/",
+							"alt": "image",
+							"effect": "none",
+							"span": "md"
+						},
+						{
+							"path": "http://placehold.it/595x480/",
 							"alt": "image",
 							"effect": "none",
 							"span": "lg"
-						},
-						{
-							"path": "http://placehold.it/768x678/",
-							"alt": "image",
-							"effect": "none",
-							"span": "md"
-						},
-						{
-							"path": "http://placehold.it/768x678/",
-							"alt": "image",
-							"effect": "none",
-							"span": "md"
 						}
 					]
 				},
@@ -83,8 +77,9 @@
 				{
 					type: 'full',
 					content: {
-						path: 'http://placehold.it/768x678/',
+						path: 'http://placehold.it/344x510/',
 						alt: 'hey man',
+						span: 'md'
 					}
 				}
 			]

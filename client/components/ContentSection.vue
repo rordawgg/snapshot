@@ -4,32 +4,37 @@
   .content-section {
     @include make-row();
     overflow: hidden;
-    margin: 0 -8vw;
+    margin: 0px -9vw 115px -9vw;
 
     &.paragraph {
-      margin: 0;
+      margin: 115px 0;
+    }
+
+    &:first-of-type {
+      margin-top: 54px;
+
+      &.paragraph {
+        margin-bottom: 24px;
+      }
     }
 
     .section-image-cont {
       @include make-col();
       box-sizing: border-box;
-      // float: none;
-      // display: inline-block;
       vertical-align: middle;
-      margin: 30px auto;
-      padding: 0 8vw;
-      // text-align: center;
+      margin: 3vw auto;
+      padding: 0 3vw;
 
+      &.full {
+        float: none;
+        text-align: center;
+      }
 
       &.sm {
-        //@include make-col-offset(1);
         @include make-col-span(4);
       }
 
       &.md {
-        // &.left-gutter {
-        //   @include make-col-offset(1);
-        // }
         @include make-col-span(6);
       }
 
@@ -42,68 +47,47 @@
       }
     }
 
-    // .section-image-cont {
-    //   @include make-col();
-    //   box-sizing: border-box;
-    //   // float: none;
-    //   // display: inline-block;
-    //   vertical-align: middle;
-    //   margin: 30px auto;
-    //   // text-align: center;
-    //   padding: 0;
-    //   @include make-col-offset(1);
-    //
-    //   .foo {
-    //     @include make-col-offset(0);
-    //   }
-    //
-    //   &:first-child {
-    //     @extend .foo;
-    //     @include make-col-offset(0);
-    //   }
-    //
-    //   &.sm {
-    //     //@include make-col-offset(1);
-    //     @include make-col-span(3.33);
-    //
-    //     &:nth-of-type(3n + 1) {
-    //       @include make-col-offset(0);
-    //     }
-    //   }
-    //
-    //   &.md {
-    //     // &.left-gutter {
-    //     //   @include make-col-offset(1);
-    //     // }
-    //     @include make-col-span(5.5);
-    //
-    //     &:nth-of-type(2n + 1) {
-    //       @include make-col-offset(0);
-    //     }
-    //
-    //     & + .sm {
-    //       @include make-col-offset(0);
-    //     }
-    //   }
-    //
-    //   &.lg {
-    //     @include make-col-span(12);
-    //     @include make-col-offset(0);
-    //
-    //     & + .sm, & + .md {
-    //       @include make-col-offset(0);
-    //     }
-    //   }
-    //
-    //   img {
-    //     width: 100%;
-    //   }
-    // }
-
-
     &.grid, &.full {
       text-align: center;
     }
+
+    @include media-breakpoint-up(md) {
+		  margin: 0px -3vw 201px -3vw;
+
+      &:first-of-type {
+        &.paragraph {
+          margin-bottom: 82px;
+        }
+      }
+
+      .section-image-cont {
+        margin: 2vw auto;
+        padding: 0 2vw;
+      }
+
+      &.paragraph {
+        padding: 0 -3vw;
+      }
+		}
+
+    @include media-breakpoint-up(lg) {
+
+      &.paragraph {
+        p {
+          width: 596px;
+        }
+      }
+		}
+
+
+    @include media-breakpoint-up(xl) {
+
+      &.paragraph {
+        p {
+          width: 730px;
+        }
+      }
+		}
   }
 
 
@@ -124,7 +108,7 @@
     </template>
 
     <template v-if='type == "full"'>
-      <div class='section-image-cont' v-bind:class='content.span ? content.span : "lg"'>
+      <div class='section-image-cont full' v-bind:class='content.span ? content.span : "lg"'>
         <img v-bind:src='content.path' v-bind:alt='content.alt' />
       </div>
     </template>
