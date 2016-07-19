@@ -64,9 +64,9 @@
           },
           {
             name: 'Rogue Valley Door',
-            path: '/img/rouge_valley_door.png',
+            path: '/img/rogue_valley_door.png',
             color: 'rgb(171, 169, 162)',
-            slug: 'rouge-valley-door'
+            slug: 'rogue-valley-door'
           },
           {
             name: 'Kamp Grizzly',
@@ -88,9 +88,9 @@
           },
           {
             name: 'Adidas Top Ten',
-            path: '/img/addidas.png',
+            path: '/img/adidas.png',
             color: 'rgb(177, 183, 186)',
-            slug: 'addidas-top-ten'
+            slug: 'adidas-top-ten'
           }
         ]
       }
