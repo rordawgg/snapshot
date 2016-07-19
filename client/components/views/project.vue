@@ -8,7 +8,7 @@
 </style>
 
 <template>
-	<div id='project'>
+	<div v-bind:style='bgColor' id='project'>
 		<project-header
 			:name='name'
 			:hero='hero'
@@ -35,6 +35,9 @@
 
 		ready(){
 			this.$dispatch("closeContactOpen");
+			this.$set('bgColor', {
+				backgroundColor: this.color
+			});
 		},
 
 	data() {
