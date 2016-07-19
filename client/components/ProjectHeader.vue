@@ -21,6 +21,14 @@
       color: #fff
   	}
 
+    .corner {
+      position: absolute;
+      left: 0;
+      height: 0;
+      border-right: 97px solid transparent;
+    }
+
+
     .project-header {
       @include make-col();
       @include make-col-span(12);
@@ -82,6 +90,7 @@
 <template>
   <header>
     <div v-bind:style='styles' class='project-header'>
+      <div v-bind:style='corner' class="corner"></div>
       <div class='back-button'>
         <a v-link="'/home'">
           <img src='/img/back-arrow.png' alt='back' />
@@ -103,7 +112,8 @@
 
     props: [
       'name',
-      'hero'
+      'hero',
+      'color'
     ],
 
     data() {
@@ -115,6 +125,9 @@
     ready() {
       this.$set('styles', {
         backgroundImage: 'url(' + this.hero + ')'
+      });
+      this.$set('corner', {
+        borderTop: '97px solid ' + this.color 
       });
     }
   }

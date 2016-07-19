@@ -12,6 +12,7 @@
 		<project-header
 			:name='name'
 			:hero='hero'
+			:color='color'
 		></project-header>
 
 		<content-section-list
