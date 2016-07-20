@@ -8,8 +8,14 @@
 
 <template>
 	<div class="home">
-		<logo-header></logo-header>
-		<project-list></project-list>
+		<logo-header
+			:header='header'
+			:sections='sections'
+		></logo-header>
+		
+		<project-list
+			:projects='projects'
+		></project-list>
 	</div>
 </template>
 
@@ -21,7 +27,10 @@
 		name: 'Home',
 
 		props: [
-			'data'
+			'title',
+			'header',
+			'sections',
+			'projects'
 		],
 
 		ready() {

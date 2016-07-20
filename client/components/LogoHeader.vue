@@ -82,12 +82,28 @@
 				<h1>Creative<br>Technologist</h1>
 			</div>
 
-			<div class="description">
-				<p>
-					Lorem ipsum dolor sit amet, atqui audiam graecis has cu. Accusamus comprehensam at eos. Mei in porro instructior, sed no repudiare moderatius.
-				</p>
-			</div>
-
+			<template v-for='section in sections'>
+				<div class="description" v-for='paragraph in section.content'>
+					<p>{{ paragraph }}</p>
+				</div>
+			</template>
 		</div>
 	</header>
 </template>
+
+<script>
+	var ContentSectionList = require('./ContentSectionList.vue');
+
+	module.exports = {
+		name: 'LogoHeader',
+
+		components: {
+			ContentSectionList
+		},
+
+		props: [
+			'header',
+			'sections'
+		]
+	}
+</script>

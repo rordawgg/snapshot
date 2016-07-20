@@ -3,7 +3,7 @@
 
   .content-section-list {
     @include make-container();
-    width: 78%;
+    width: 83%;
 
     @include media-breakpoint-up(xl) {
 		  width: 970px;
@@ -13,7 +13,14 @@
 
 <template>
   <div class='content-section-list'>
+
     <template v-for='section in sections'>
+      <!-- <generic-content-section
+        v-if='generic'
+        :type='section.type'
+        :content='section.content'
+      ></generic-content-section> -->
+
       <content-section
         :type='section.type'
         :content='section.content'
@@ -24,9 +31,10 @@
 
 <script>
   var ContentSection = require('./ContentSection.vue');
+  // var GenericContentSection = require('./GenericContentSection.vue');
 
   module.exports = {
-    name: 'SectionList',
+    name: 'ContentSectionList',
 
     components: {
       ContentSection

@@ -62,40 +62,9 @@
 			ContactItem
 		},
 
-		data() {
-			return {
-				items: [
-					{
-						title: 'Portland, Ore',
-						fields: [
-							'1300 SE Start St',
-							'503-123-4567'
-						]
-					},
-					{
-						title: 'Jacksonville, Ore',
-						fields: [
-							'123 Street',
-							'503-123-4567'
-						]
-					},
-					{
-						title: 'Inquiries',
-						fields: [
-							'email@snapshot.is',
-							'503-123-4567'
-						]
-					},
-					{
-						title: 'Follow Us',
-						fields: [
-							'Twitter',
-							'Facebook'
-						]
-					},
-				]
-			}
-		},
+		props: [
+			'items'
+		],
 
 		methods: {
 			close() {

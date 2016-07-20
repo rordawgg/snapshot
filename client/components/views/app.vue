@@ -19,6 +19,7 @@
 			v-on:close='showContact = false'
 			v-if='showContact'
 			transition='slide'
+			:items='data.contact.items'
 		></contact>
 
 		<div class="contact-open" v-show="contactOpen">
@@ -36,8 +37,8 @@
 				<router-view
 					:title='data.pages.home.title'
 					:header='data.pages.home.header'
-					:descriptions='data.pages.home.descriptions'
-					:projects='data.pages.home.projects'
+					:sections='data.pages.home.sections'
+					:projects='data.projects'
 				 	class="view"></router-view>
 			</template>
 		</div>
@@ -113,12 +114,49 @@
 				    "home": {
 				      "title": "Snapshot.is",
 				      "header": "Creative Technologist",
-				      "descriptions": [
-				        "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
-				        "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+				      sections: [
+								{
+									type: 'paragraph',
+									content: [
+										'Lorem ipsum dolor sit amet, atqui audiam graecis has cu. Accusamus comprehensam at eos. Mei in porro instructior, sed no repudiare moderatius.'
+									]
+								}
 				      ]
 				    }
-				  }
+				  },
+
+					contact: {
+						items: [
+							{
+								title: 'Portland, Ore',
+								fields: [
+									'1300 SE Start St',
+									'503-123-4567'
+								]
+							},
+							{
+								title: 'Jacksonville, Ore',
+								fields: [
+									'123 Street',
+									'503-123-4567'
+								]
+							},
+							{
+								title: 'Inquiries',
+								fields: [
+									'email@snapshot.is',
+									'503-123-4567'
+								]
+							},
+							{
+								title: 'Follow Us',
+								fields: [
+									'Twitter',
+									'Facebook'
+								]
+							},
+						]
+					}
 				}
 			}
 		},

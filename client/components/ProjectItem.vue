@@ -85,7 +85,7 @@
 
 		props: [
 			'name',
-			'path',
+			'cover',
 			'color',
 			'slug'
 		],
@@ -98,7 +98,7 @@
 
 		ready() {
 		 this.$set('style', {
-			 backgroundImage: 'url(' + this.path + ')'
+			 backgroundImage: 'url(' + this.cover + ')'
 		 });
 		}
 	}
