@@ -1,6 +1,12 @@
 <template>
 	<div>
-    <project></project>
+    <project
+    	v-if='projects[this.$route.params.name]'
+    	:name='projects[this.$route.params.name].name'
+    	:color='projects[this.$route.params.name].color'
+    	:hero='projects[this.$route.params.name].hero'
+    	:sections='projects[this.$route.params.name].sections'
+    ></project>
 	</div>
 </template>
 

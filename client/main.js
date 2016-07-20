@@ -4,7 +4,6 @@ var Http = require("vue-resource");
 
 var App = require("./components/views/app.vue");
 var Home = require("./components/views/home.vue");
-var Project = require("./components/views/project.vue");
 var ProjectDirector = require('./components/ProjectDirector.vue');
 
 Vue.use(Router);

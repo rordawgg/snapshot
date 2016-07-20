@@ -55,11 +55,13 @@
         width: 75%;
       }
     }
-    @include media-breakpoint-up(xs){
+
+    @include media-breakpoint-up(xs) {
       .project-name{
         font-size: 2.1875rem
       }
     }
+
     @include media-breakpoint-up(md) {
       .project-header{
         height: 388px;
@@ -68,6 +70,7 @@
         font-size: 3.75rem;
       }
     }
+
     @include media-breakpoint-up(lg) {
       padding-top: 36px;
       .project-header{
@@ -77,11 +80,12 @@
         margin: 0 auto;
       }
     }
+
     @include media-breakpoint-up(xl) {
       padding-top: 40px;
       .project-header{
-        width:1270;
-        height: 480;
+        width: 1270px;
+        height: 480px;
       }
     }
   }
@@ -118,7 +122,8 @@
 
     data() {
       return {
-        styles: {}
+        styles: {},
+        corner: {}
       }
     },
 
@@ -126,8 +131,9 @@
       this.$set('styles', {
         backgroundImage: 'url(' + this.hero + ')'
       });
+
       this.$set('corner', {
-        borderTop: '97px solid ' + this.color 
+        borderTop: '97px solid ' + this.color
       });
     }
   }

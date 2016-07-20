@@ -8,7 +8,7 @@
 </style>
 
 <template>
-	<div v-bind:style='bgColor' id='project'>
+	<div v-bind:style='{backgroundColor: color}' id='project'>
 		<project-header
 			:name='name'
 			:hero='hero'
@@ -33,19 +33,16 @@
 			ContentSectionList
 		},
 
-		ready(){
-			this.$dispatch("closeContactOpen");
-			this.$set('bgColor', {
-				backgroundColor: this.color
-			});
-		},
-
 		props: [
-			'projects'
+			'name',
+			'color',
+			'hero',
+			'sections'
 		],
 
 		ready() {
+			console.log(this.hero);
 			this.$dispatch("closeContactOpen");
 		}
-}
+	}
 </script>
