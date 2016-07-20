@@ -4,6 +4,7 @@
   .project-list {
     @include make-container();
     width: 100%;
+    height: 438px;
     margin-top: 54px;
     margin-bottom: 54px;
     box-sizing: border-box;
