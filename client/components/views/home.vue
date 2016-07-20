@@ -20,7 +20,11 @@
 	module.exports = {
 		name: 'Home',
 
-		ready(){
+		props: [
+			'data'
+		],
+
+		ready() {
 			this.$dispatch('openContactOpen')
 		},
 

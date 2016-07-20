@@ -26,7 +26,20 @@
 		</div>
 
 		<div id="content" @click='showContact = false;'  v-bind:style='{backgroundColor: bgColor}'>
-			<router-view class="view"></router-view>
+			<template v-if='$route.name == "project"'>
+				<router-view
+				 :projects='data.projects'
+				 class="view"></router-view>
+			</template>
+
+			<template v-else>
+				<router-view
+					:title='data.pages.home.title'
+					:header='data.pages.home.header'
+					:descriptions='data.pages.home.descriptions'
+					:projects='data.pages.home.projects'
+				 	class="view"></router-view>
+			</template>
 		</div>
 	</div>
 </template>
@@ -45,7 +58,68 @@
 			return {
 				showContact: false,
 				bgColor: '#fff',
-				contactOpen: true
+				contactOpen: true,
+				data: {
+				  "projects": {
+				    "sunday-afternoons": {
+							name: 'Sunday Afternoons',
+							color: 'rgb(162, 168, 170)',
+							cover: '/img/sunday_afternoons.png',
+							hero: '/img/sunday-afternoons-hero.png',
+							sections: [
+								{
+									"type": "paragraph",
+									"content": [
+										'Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris.'
+									]
+								},
+
+								{
+									"type": "grid",
+									"content": [
+										{
+											"path": "http://placehold.it/283x393/",
+											"alt": "image",
+											"effect": "none",
+											"span": "md"
+										},
+										{
+											"path": "http://placehold.it/283x393/",
+											"alt": "image",
+											"effect": "none",
+											"span": "md"
+										},
+										{
+											"path": "http://placehold.it/595x480/",
+											"alt": "image",
+											"effect": "none",
+											"span": "lg"
+										}
+									]
+								},
+
+								{
+									type: 'full',
+									content: {
+										path: 'http://placehold.it/344x510/',
+										alt: 'hey man',
+										span: 'md'
+									}
+								}
+							]
+						}
+				  },
+				  "pages": {
+				    "home": {
+				      "title": "Snapshot.is",
+				      "header": "Creative Technologist",
+				      "descriptions": [
+				        "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+				        "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+				      ]
+				    }
+				  }
+				}
 			}
 		},
 

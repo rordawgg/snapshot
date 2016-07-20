@@ -40,54 +40,12 @@
 			});
 		},
 
-	data() {
-		return {
-			name: 'Sunday Afternoons',
-			path: '/img/sunday_afternoons.png',
-			color: 'rgb(162, 168, 170)',
-			hero: '/img/sunday-afternoons-hero.png',
-			sections: [
-				{
-					"type": "paragraph",
-					"content": [
-						'Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris.'
-					]
-				},
+		props: [
+			'projects'
+		],
 
-				{
-					"type": "grid",
-					"content": [
-						{
-							"path": "http://placehold.it/283x393/",
-							"alt": "image",
-							"effect": "none",
-							"span": "md"
-						},
-						{
-							"path": "http://placehold.it/283x393/",
-							"alt": "image",
-							"effect": "none",
-							"span": "md"
-						},
-						{
-							"path": "http://placehold.it/595x480/",
-							"alt": "image",
-							"effect": "none",
-							"span": "lg"
-						}
-					]
-				},
-
-				{
-					type: 'full',
-					content: {
-						path: 'http://placehold.it/344x510/',
-						alt: 'hey man',
-						span: 'md'
-					}
-				}
-			]
+		ready() {
+			this.$dispatch("closeContactOpen");
 		}
-	}
 }
 </script>
