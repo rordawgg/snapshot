@@ -12,13 +12,13 @@
       z-index: 1003;
     }
 
-    .contact-button {
+    a.contact-button {
   		position: absolute;
   		top: 13px;
   		right: 15px;
   		font-size: 1.125rem;
   		z-index: 1003;
-      color: #fff
+      color: #fff;
   	}
 
     .corner {

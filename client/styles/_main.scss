@@ -1,13 +1,12 @@
 @import "_mixin";
 @import "_vars";
+@import "_fonts";
 @import "bootstrap/scss/bootstrap-grid";
 @import "bootstrap/scss/_normalize";
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
-
 
 
 body {
-	font-family: 'museo-sans', 'Nunito', Helvetica, Arial, sans-serif;
+	font-family: 'Avenir-Roman', Helvetica, Arial, sans-serif;
 	background-color: #fff;
 	color: $fontColor;
 	font-size: 16px;
@@ -20,13 +19,17 @@ ul {
 
 a {
 	text-decoration: none;
-	color: $fontColor;
+}
+
+h1, a {
+	font-family: "Avenir-Book";
 }
 
 h1, h2, h3, h4, a, p, div, i {
+
 	font-weight: 300;
 }
 
 p {
-	color: $paraColor;
+	// color: $paraColor;
 }

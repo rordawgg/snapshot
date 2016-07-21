@@ -31,6 +31,7 @@
 			color: $primary;
 			opacity: 0;
 			font-size: 2.5rem;
+			font-family: 'Avenir-Medium';
 			text-align: center;
 			position: relative;
 			transform: translateY(-50%);

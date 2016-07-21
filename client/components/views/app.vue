@@ -1,5 +1,21 @@
-<style lang='scss' scoped>
+<style lang='scss'>
 	@import '../../styles/_main';
+
+	.cont {
+		color: #fff;
+
+		a {
+			color: #fff;
+		}
+
+		&.light {
+			color: #000;
+
+			p, a {
+				color: $fontColor;
+			}
+		}
+	}
 
 	.contact-button {
 		position: absolute;
@@ -10,12 +26,7 @@
 	}
 
 	#content {
-		transition: 150ms;
-		// color: white;
-		//
-		// &.light {
-		// 	color: $paraColor;
-		// }
+		transition: all 200ms, color 50ms;
 	}
 
 	.fade-transition {
@@ -31,7 +42,7 @@
 </style>
 
 <template>
-	<div id="cont">
+	<div class="cont" v-bind:class='{"light": light}'>
 		<contact
 			v-on:close='showContact = false'
 			v-if='showContact'
@@ -45,8 +56,7 @@
 		<div
 			id="content"
 			@click='showContact = false;'
-			v-bind:style='{backgroundColor: bgColor}'
-			v-bind:class='{"light": light}'>
+			v-bind:style='{backgroundColor: bgColor}'>
 			<router-view
 				transition='fade'
 				transition-mode='out-in'
@@ -92,9 +102,6 @@
 		},
 
 		ready() {
-			/*
-				Be sure to always contrast the text with the color module
-			*/
 			// this.contrast();
 		},
 
@@ -108,19 +115,21 @@
 			// 	});
 			// }
 
-			// contrast() {
-			// 	this.$set('light', Color(this.bgColor).light());
-			// }
+			contrast() {
+				this.$set('light', Color(this.bgColor).light());
+				console.log(this.light);
+			}
 		},
 
 		events: {
 			changeBg (color){
 				this.$set('bgColor', color);
-				// this.contrast();
+				this.contrast();
 			},
 
 			resetBg(){
 				this.$set('bgColor', '#fff');
+				this.contrast();
 			},
 
 			showContact(){

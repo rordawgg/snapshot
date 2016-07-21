@@ -14,6 +14,7 @@
 
 		h1 {
 			font-size: .8125rem;
+			font-family: 'Avenir-Black';
 		}
 	}
 </style>
