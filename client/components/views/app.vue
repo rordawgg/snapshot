@@ -6,6 +6,7 @@
 		top: 13px;
 		right: 15px;
 		font-size: 1.125rem;
+		z-index: 1003;
 	}
 
 	#content {
@@ -18,14 +19,15 @@
 	}
 
 	.fade-transition {
-	  transition: all .3s ease;
-		height: 100vh;
+	  transition: all .5s;
+		transform: translateY(0);
 	}
 
 	.fade-enter, .fade-leave {
 	  opacity: 0;
-		height: 0;
+		transform: translateY(100%);
 	}
+
 </style>
 
 <template>
@@ -47,6 +49,7 @@
 			v-bind:class='{"light": light}'>
 			<router-view
 				transition='fade'
+				transition-mode='out-in'
 			></router-view>
 			<!-- <template v-if='$route.name == "project"'>
 				<router-view

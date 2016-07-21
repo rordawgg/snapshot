@@ -8,7 +8,7 @@
 </style>
 
 <template>
-	<div v-bind:style='{backgroundColor: color}' id='project'>
+	<div class='view' id='project'>
 		<project-header
 			:name='name'
 			:hero='hero'
@@ -41,8 +41,8 @@
 		],
 
 		ready() {
-			console.log(this.hero);
 			this.$dispatch("closeContactOpen");
+			this.$dispatch('changeBg', this.color);
 		}
 	}
 </script>

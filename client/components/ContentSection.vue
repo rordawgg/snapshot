@@ -120,6 +120,7 @@
 </template>
 
 <script>
+
   module.exports = {
     name: 'ContentSection',
 

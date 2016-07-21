@@ -7,7 +7,7 @@
 </style>
 
 <template>
-	<div class="home">
+	<div class="view home">
 		<logo-header
 			:header='data.header'
 			:sections='data.sections'

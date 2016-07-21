@@ -68,7 +68,8 @@
 			v-bind:style='style'
 			class='project-item'
 			v-on:mouseover="$dispatch('changeBg', color)"
-			v-on:mouseout="$dispatch('resetBg')" >
+			v-on:mouseout="$dispatch('resetBg')"
+			v-on:click="$dispatch('resetBg')">
 
 			<div class='project-name'>
 				<span>{{ name }}</span>

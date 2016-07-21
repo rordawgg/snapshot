@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class='view'>
     <project
     	v-if='projects[this.$route.params.name]'
     	:name='projects[this.$route.params.name].name'
