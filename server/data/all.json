@@ -248,17 +248,14 @@
           },
 
           {
-            "type": "full",
-            "content": {
-              "path": "../img/dvo/Dvo1.png",
-              "alt": "hey man",
-              "span": "lg"
-            }
-          },
-
-          {
             "type": "grid",
             "content": [
+              {
+                "path": "../img/dvo/Dvo1.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "lg"
+              },
               {
                 "path": "../img/dvo/Dvo2.png",
                 "alt": "image",
@@ -266,21 +263,18 @@
                 "span": "md"
               },
               {
-                "path": "../img/dvo/Dvo2.png",
+                "path": "../img/dvo/Dvo3.png",
                 "alt": "image",
                 "effect": "none",
                 "span": "md"
+              },
+              {
+                "path": "../img/dvo/Dvo4.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "lg"
               }
             ]
-          },
-
-          {
-            "type": "full",
-            "content": {
-              "path": "../img/dvo/Dvo4.png",
-              "alt": "hey man",
-              "span": "lg"
-            }
           },
 
           {
