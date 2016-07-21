@@ -8,8 +8,23 @@
 		font-size: 1.125rem;
 	}
 
-	#content{
+	#content {
 		transition: 150ms;
+		// color: white;
+		//
+		// &.light {
+		// 	color: $paraColor;
+		// }
+	}
+
+	.fade-transition {
+	  transition: all .3s ease;
+		height: 100vh;
+	}
+
+	.fade-enter, .fade-leave {
+	  opacity: 0;
+		height: 0;
 	}
 </style>
 
@@ -19,15 +34,21 @@
 			v-on:close='showContact = false'
 			v-if='showContact'
 			transition='slide'
-			:items='data.contact.items'
 		></contact>
 
 		<div class="contact-open" v-show="contactOpen">
 			<a class='contact-button' href="#" v-bind:style='{color: color}' @click.prevent='showContact = true'>Contact</a>
 		</div>
 
-		<div id="content" @click='showContact = false;'  v-bind:style='{backgroundColor: bgColor}'>
-			<template v-if='$route.name == "project"'>
+		<div
+			id="content"
+			@click='showContact = false;'
+			v-bind:style='{backgroundColor: bgColor}'
+			v-bind:class='{"light": light}'>
+			<router-view
+				transition='fade'
+			></router-view>
+			<!-- <template v-if='$route.name == "project"'>
 				<router-view
 				 :projects='data.projects'
 				 class="view"></router-view>
@@ -40,12 +61,14 @@
 					:sections='data.pages.home.sections'
 					:projects='data.projects'
 				 	class="view"></router-view>
-			</template>
+			</template> -->
 		</div>
 	</div>
 </template>
 
 <script>
+	var Color = require('color');
+
 	var Contact = require('../Contact.vue');
 
 	module.exports = {
@@ -59,111 +82,38 @@
 			return {
 				showContact: false,
 				bgColor: '#fff',
+				light: true,
 				contactOpen: true,
-				data: {
-				  "projects": {
-				    "sunday-afternoons": {
-							name: 'Sunday Afternoons',
-							color: 'rgb(162, 168, 170)',
-							cover: '/img/sunday_afternoons.png',
-							hero: '/img/sunday-afternoons-hero.png',
-							sections: [
-								{
-									"type": "paragraph",
-									"content": [
-										'Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris.'
-									]
-								},
-
-								{
-									"type": "grid",
-									"content": [
-										{
-											"path": "http://placehold.it/283x393/",
-											"alt": "image",
-											"effect": "none",
-											"span": "md"
-										},
-										{
-											"path": "http://placehold.it/283x393/",
-											"alt": "image",
-											"effect": "none",
-											"span": "md"
-										},
-										{
-											"path": "http://placehold.it/595x480/",
-											"alt": "image",
-											"effect": "none",
-											"span": "lg"
-										}
-									]
-								},
-
-								{
-									type: 'full',
-									content: {
-										path: 'http://placehold.it/344x510/',
-										alt: 'hey man',
-										span: 'md'
-									}
-								}
-							]
-						}
-				  },
-				  "pages": {
-				    "home": {
-				      "title": "Snapshot.is",
-				      "header": "Creative Technologist",
-				      sections: [
-								{
-									type: 'paragraph',
-									content: [
-										'Lorem ipsum dolor sit amet, atqui audiam graecis has cu. Accusamus comprehensam at eos. Mei in porro instructior, sed no repudiare moderatius.'
-									]
-								}
-				      ]
-				    }
-				  },
-
-					contact: {
-						items: [
-							{
-								title: 'Portland, Ore',
-								fields: [
-									'1300 SE Start St',
-									'503-123-4567'
-								]
-							},
-							{
-								title: 'Jacksonville, Ore',
-								fields: [
-									'123 Street',
-									'503-123-4567'
-								]
-							},
-							{
-								title: 'Inquiries',
-								fields: [
-									'email@snapshot.is',
-									'503-123-4567'
-								]
-							},
-							{
-								title: 'Follow Us',
-								fields: [
-									'Twitter',
-									'Facebook'
-								]
-							},
-						]
-					}
-				}
+				// data: {}
 			}
+		},
+
+		ready() {
+			/*
+				Be sure to always contrast the text with the color module
+			*/
+			// this.contrast();
+		},
+
+		methods: {
+			// getData() {
+			// 	this.$http.get('/api').then(function (res) {
+			// 		console.log(res.data);
+			// 		this.$set('data', res.data);
+			// 	}, function (err) {
+			// 		console.log(err);
+			// 	});
+			// }
+
+			// contrast() {
+			// 	this.$set('light', Color(this.bgColor).light());
+			// }
 		},
 
 		events: {
 			changeBg (color){
 				this.$set('bgColor', color);
+				// this.contrast();
 			},
 
 			resetBg(){

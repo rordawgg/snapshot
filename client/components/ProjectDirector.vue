@@ -16,9 +16,9 @@
 	module.exports = {
 		name: 'ProjectDirector',
 
-		props: [
-			'projects'
-		],
+		// props: [
+		// 	'projects'
+		// ],
 
     components: {
       Project
@@ -26,14 +26,31 @@
 
     data() {
       return {
-        project: {}
+        projects: []
       }
     },
 
 		ready() {
-			if (!this.projects[this.$route.params.name]) {
-        this.$router.go({path: '/home'});
-      }
+			this.getData();
+			// if (!this.projects[this.$route.params.name]) {
+      //   this.$router.go({path: '/home'});
+      // }
+		},
+
+		methods: {
+			getData() {
+				this.$http.get('/api/projects').then(function (res) {
+					this.$set('projects', res.data);
+
+					if (!this.projects[this.$route.params.name]) {
+		        this.$router.go({path: '/home'});
+		      } else {
+
+					}
+				}, function (err) {
+					console.log(err);
+				});
+			}
 		}
 }
 </script>

@@ -7,6 +7,7 @@
 
 		.sub-logo {
 			h1 {
+				color: black;
 				font-size: 2.5rem;
 				margin: 2px 0 24px 0;
 			}

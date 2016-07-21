@@ -62,11 +62,29 @@
 			ContactItem
 		},
 
-		props: [
-			'items'
-		],
+		data() {
+			return {
+				items: []
+			}
+		},
+
+		// props: [
+		// 	'items'
+		// ],
+
+		ready() {
+			this.getData();
+		},
 
 		methods: {
+			getData() {
+				this.$http.get('/api/contact').then(function (res) {
+					this.$set('items', res.data.items);
+				}, function (err) {
+					console.log(err);
+				});
+			},
+
 			close() {
 				this.$dispatch('close');
 			}
