@@ -3,7 +3,7 @@
 
   .content-section {
     @include make-row();
-    // margin: 0px -9vw 115px -9vw;
+    //argin: 0px -9vw 115px -9vw;
 
     &.paragraph {
       // margin: 115px 0;
@@ -68,7 +68,7 @@
 
 <template>
   <div v-bind:class='type' class='content-section'>
-
+    
     <template v-if='type == "grid"'>
       <template v-for='(i, image) in content'>
 

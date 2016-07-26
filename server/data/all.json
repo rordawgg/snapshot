@@ -65,7 +65,7 @@
         },
 
         {
-          "type": "grid",
+          "type": "grid-centered",
           "content": [
             {
               "path": "../img/sunday/SunP1.png",

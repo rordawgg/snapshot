@@ -61,7 +61,7 @@
 				transition='fade'
 				transition-mode='out-in'
 			></router-view>
-			<!-- <template v-if='$route.name == "project"'>
+			<!-- <template v-if='$roue.name == "project"'>
 				<router-view
 				 :projects='data.projects'
 				 class="view"></router-view>

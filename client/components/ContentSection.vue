@@ -4,10 +4,32 @@
   .content-section {
     @include make-row();
     overflow: hidden;
-    margin: 0px -9vw 115px -9vw;
+    margin: 0px -9vw calc(115px - 6vw) -9vw;
 
     &.paragraph {
       margin: 115px 0;
+    }
+
+    &.full {
+      .section-image-cont {
+        margin: auto;
+      }
+    }
+
+    &.grid-centered {
+
+
+      .section-image-cont {
+        display: inline-block;
+        margin: 0 3.7vw;
+      }
+    }
+
+    &.full, &.grid-centered {
+      .section-image-cont {
+        float: none;
+        text-align: center;
+      }
     }
 
     &:first-of-type {
@@ -22,13 +44,7 @@
       @include make-col();
       box-sizing: border-box;
       vertical-align: middle;
-      margin: 3vw auto;
-      padding: 0 3vw;
-
-      &.full {
-        float: none;
-        text-align: center;
-      }
+      padding: 3vw;
 
       &.sm {
         @include make-col-span(4);
@@ -47,12 +63,12 @@
       }
     }
 
-    &.grid, &.full {
+    &:not(.paragraph) {
       text-align: center;
     }
 
     @include media-breakpoint-up(md) {
-		  margin: 0px -3vw 201px -3vw;
+      margin: 0px -3vw calc(200px - 4vw) -3vw;
 
       &:first-of-type {
         &.paragraph {
@@ -61,8 +77,8 @@
       }
 
       .section-image-cont {
-        margin: 2vw auto;
-        padding: 0 2vw;
+        // margin: -2vw auto;
+        padding: 2vw;
       }
 
       &.paragraph {
@@ -96,7 +112,7 @@
 <template>
   <div v-bind:class='type' class='content-section'>
 
-    <template v-if='type == "grid"'>
+    <template v-if='(type == "grid") || (type == "grid-centered")'>
       <template v-for='(i, image) in content'>
 
         <div class='section-image-cont' v-bind:class='image.span'>
