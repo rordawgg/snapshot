@@ -1,0 +1,420 @@
+{
+  "projects": {
+    "sunday-afternoons": {
+      "name": "Sunday Afternoons",
+      "color": "rgb(162, 168, 170)",
+      "cover": "/img/sunday/sunday_afternoons.png",
+      "hero": "/img/sunday/sunday-afternoons-hero.png",
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": [
+            "Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris."
+          ]
+        },
+
+        {
+          "type": "grid",
+          "content": [
+            {
+              "path": "../img/sunday/Sun1.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            },
+            {
+              "path": "../img/sunday/Sun2.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            },
+            {
+              "path": "../img/sunday/Sun3.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "lg"
+            }
+          ]
+        },
+
+        {
+          "type": "full",
+          "content": {
+            "path": "../img/sunday/SunT1.png",
+            "alt": "hey man",
+            "span": "md"
+          }
+        },
+
+        {
+          "type": "full",
+          "content": {
+            "path": "../img/sunday/SunT2.png",
+            "alt": "hey man",
+            "span": "md"
+          }
+        },
+
+        {
+          "type": "full",
+          "content": {
+            "path": "../img/sunday/SunT3.png",
+            "alt": "hey man",
+            "span": "md"
+          }
+        },
+
+        {
+          "type": "grid",
+          "content": [
+            {
+              "path": "../img/sunday/SunP1.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "sm"
+            },
+            {
+              "path": "../img/sunday/SunP2.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "sm"
+            }
+          ]
+        }
+      ]
+    },
+
+    "rogue-valley-door": {
+      "name": "Rogue Valley Door",
+      "color": "rgb(171, 169, 162)",
+      "cover": "/img/rvd/rogue_valley_door.png",
+      "hero": "/img/rvd/RvdHeader.png",
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": [
+            "Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris."
+          ]
+        },
+
+        {
+          "type": "grid",
+          "content": [
+            {
+              "path": "../img/rvd/Rvd1.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            },
+            {
+              "path": "../img/rvd/Rvd2.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            }
+          ]
+        },
+
+        {
+          "type": "grid",
+          "content": [
+            {
+              "path": "../img/rvd/Rvd3.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            },
+            {
+              "path": "../img/rvd/Rvd4.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            }
+          ]
+        },
+
+        {
+          "type": "grid",
+          "content": [
+            {
+              "path": "../img/rvd/Rvd5.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            },
+            {
+              "path": "../img/rvd/Rvd6.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            }
+          ]
+        },
+
+        {
+          "type": "grid",
+          "content": [
+            {
+              "path": "../img/rvd/RvdP1.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "sm"
+            },
+            {
+              "path": "../img/rvd/RvdP2.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "sm"
+            },
+            {
+              "path": "../img/rvd/RvdP3.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "sm"
+            }
+          ]
+        },
+
+        {
+          "type": "grid",
+          "content": [
+            {
+              "path": "../img/rvd/RvdT1.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            },
+            {
+              "path": "../img/rvd/RvdT2.png",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            }
+          ]
+        }
+      ]
+    },
+
+      "kamp-grizzly": {
+        "name": "Kamp Grizzly",
+        "color": "rgb(128, 128, 128)",
+        "cover": "/img/kamp/kamp.png",
+        "hero": "/img/kamp/KampHeader.png",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": [
+              "Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris."
+            ]
+          },
+
+          {
+            "type": "grid",
+            "content": [
+              {
+                "path": "../img/kamp/Kamp1.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "lg"
+              },
+              {
+                "path": "../img/kamp/Kamp2.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "md"
+              },
+              {
+                "path": "../img/kamp/Kamp3.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "md"
+              }
+            ]
+          }
+        ]
+      },
+
+      "dolly-varden": {
+        "name": "Dolly Varden",
+        "color": "rgb(169, 171, 167)",
+        "cover": "/img/dvo/Dolly.png",
+        "hero": "/img/dvo/DollyHeader.png",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": [
+              "Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris."
+            ]
+          },
+
+          {
+            "type": "grid",
+            "content": [
+              {
+                "path": "../img/dvo/Dvo1.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "lg"
+              },
+              {
+                "path": "../img/dvo/Dvo2.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "md"
+              },
+              {
+                "path": "../img/dvo/Dvo3.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "md"
+              },
+              {
+                "path": "../img/dvo/Dvo4.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "lg"
+              }
+            ]
+          },
+
+          {
+            "type": "grid",
+            "content": [
+              {
+                "path": "../img/dvo/DvoP1.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "sm"
+              },
+              {
+                "path": "../img/dvo/DvoP2.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "sm"
+              },
+              {
+                "path": "../img/dvo/DvoP3.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "sm"
+              }
+            ]
+          }
+        ]
+      },
+
+
+      "mitsubishi-electric": {
+        "name": "Mitsubishi Electric",
+        "color": "rgb(188, 188, 188)",
+        "cover": "/img/mit/woman.png",
+        "hero": "/img/mit/MitHeader.png",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": [
+              "Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris."
+            ]
+          },
+
+          {
+            "type": "grid",
+            "content": [
+              {
+                "path": "../img/mit/MitP1.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "sm"
+              },
+              {
+                "path": "../img/mit/MitP2.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "sm"
+              },
+              {
+                "path": "../img/mit/MitP3.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "sm"
+              }
+            ]
+          }
+        ]
+      },
+
+      "adidas": {
+        "name": "Adidas Top Ten",
+        "color": "rgb(177, 183, 186)",
+        "cover": "/img/adidas/adidas.png",
+        "hero": "/img/adidas/AdidasHeader.png",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": [
+              "Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris."
+            ]
+          },
+
+          {
+            "type": "grid",
+            "content": [
+              {
+                "path": "../img/adidas/Adidas1.png",
+                "alt": "image",
+                "effect": "none",
+                "span": "lg"
+              }
+            ]
+          }
+        ]
+      }
+    },
+  "pages": {
+    "home": {
+      "title": "Snapshot.is",
+      "header": "Creative Technologist",
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": [
+            "Lorem ipsum dolor sit amet, atqui audiam graecis has cu. Accusamus comprehensam at eos. Mei in porro instructior, sed no repudiare moderatius."
+          ]
+        }
+      ]
+    }
+  },
+
+  "contact": {
+    "items": [
+      {
+        "title": "Portland, Ore",
+        "fields": [
+          "1300 SE Start St",
+          "503-123-4567"
+        ]
+      },
+      {
+        "title": "Jacksonville, Ore",
+        "fields": [
+          "123 Street",
+          "503-123-4567"
+        ]
+      },
+      {
+        "title": "Inquiries",
+        "fields": [
+          "email@snapshot.is",
+          "503-123-4567"
+        ]
+      },
+      {
+        "title": "Follow Us",
+        "fields": [
+          "Twitter",
+          "Facebook"
+        ]
+      }
+    ]
+  }
+}

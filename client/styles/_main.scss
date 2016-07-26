@@ -1,0 +1,35 @@
+@import "_mixin";
+@import "_vars";
+@import "_fonts";
+@import "bootstrap/scss/bootstrap-grid";
+@import "bootstrap/scss/_normalize";
+
+
+body {
+	font-family: 'Avenir-Roman', Helvetica, Arial, sans-serif;
+	background-color: #fff;
+	color: $fontColor;
+	font-size: 16px;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, a {
+	font-family: "Avenir-Book";
+}
+
+h1, h2, h3, h4, a, p, div, i {
+
+	font-weight: 300;
+}
+
+p {
+	// color: $paraColor;
+}
