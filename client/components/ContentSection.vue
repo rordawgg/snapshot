@@ -61,7 +61,16 @@
       img {
         width: 100%;
       }
-    }
+    }  
+    
+      .slider {
+        overflow-x: scroll;
+        white-space:nowrap;
+        .slide{
+          display: inline-block;
+          margin: 0 86px;
+        }
+      }
 
     &:not(.paragraph) {
       text-align: center;
@@ -154,6 +163,15 @@
     <template v-if='type == "paragraph"'>
       <p v-for='paragraph in content'>{{ paragraph }}</p>
     </template>
+
+    <template v-if='type == "slider"'>
+      <div class='slider'>
+        <div class='slide' v-for='slide in content'>
+          <img v-bind:src='slide.path'>
+        </div>
+      </div>
+    </template>
+
   </div>
 </template>
 
@@ -171,7 +189,8 @@
 
     props: [
       'type',
-      'content'
+      'content',
+      'color'
     ]
   }
 </script>

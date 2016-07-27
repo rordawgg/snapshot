@@ -9,7 +9,31 @@
         {
           "type": "paragraph",
           "content": [
-            "Ut interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris."
+            "It interdum sit amet eros ut vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit, mauris sed maximus tempus, quam massa accumsan mauris."
+          ]
+        },
+
+        {
+          "type": "slider",
+          "content": [
+            {
+              "path": "http://placehold.it/350x150",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            },
+            {
+              "path": "http://placehold.it/350x150",
+              "alt": "image",
+              "effect": "none",
+              "span": "md"
+            },
+            {
+              "path": "http://placehold.it/350x150",
+              "alt": "image",
+              "effect": "none",
+              "span": "lg"
+            }
           ]
         },
 

@@ -17,6 +17,7 @@
 
 		<content-section-list
 			:sections='sections'
+			:color='color'
 		></content-section-list>
 	</div>
 </template>
