@@ -3,8 +3,8 @@
     "sunday-afternoons": {
       "name": "Sunday Afternoons",
       "color": "rgb(162, 168, 170)",
-      "cover": "/img/sunday/sunday_afternoons.png",
-      "hero": "/img/sunday/sunday-afternoons-hero.png",
+      "cover": "/img/sunday/SundayAfternoons.png",
+      "hero": "/img/sunday/SundayAfternoonsHeader.png",
       "sections": [
         {
           "type": "paragraph",
@@ -18,19 +18,19 @@
           "content": [
             {
               "path": "../img/sunday/Sun1.png",
-              "alt": "image",
+              "alt": "Sunday Afternoons Desktop Image",
               "effect": "none",
               "span": "md"
             },
             {
               "path": "../img/sunday/Sun2.png",
-              "alt": "image",
+              "alt": "Sunday Afternoons Desktop Image",
               "effect": "none",
               "span": "md"
             },
             {
               "path": "../img/sunday/Sun3.png",
-              "alt": "image",
+              "alt": "Sunday Afternoons Desktop Image",
               "effect": "none",
               "span": "lg"
             }
@@ -41,7 +41,8 @@
           "type": "full",
           "content": {
             "path": "../img/sunday/SunT1.png",
-            "alt": "hey man",
+            "alt": "Sunday Afternoons Tablet Image",
+            "effect": "tablet",
             "span": "md"
           }
         },
@@ -50,7 +51,8 @@
           "type": "full",
           "content": {
             "path": "../img/sunday/SunT2.png",
-            "alt": "hey man",
+            "alt": "Sunday Afternoons Tablet Image",
+            "effect": "tablet",
             "span": "md"
           }
         },
@@ -59,7 +61,8 @@
           "type": "full",
           "content": {
             "path": "../img/sunday/SunT3.png",
-            "alt": "hey man",
+            "alt": "Sunday Afternoons Tablet Image",
+            "effect": "tablet",
             "span": "md"
           }
         },
@@ -69,14 +72,14 @@
           "content": [
             {
               "path": "../img/sunday/SunP1.png",
-              "alt": "image",
-              "effect": "none",
+              "alt": "Sunday Afternoons Phone Image",
+              "effect": "phone",
               "span": "sm"
             },
             {
               "path": "../img/sunday/SunP2.png",
-              "alt": "image",
-              "effect": "none",
+              "alt": "Sunday Afternoons Phone Image",
+              "effect": "phone",
               "span": "sm"
             }
           ]
@@ -87,7 +90,7 @@
     "rogue-valley-door": {
       "name": "Rogue Valley Door",
       "color": "rgb(171, 169, 162)",
-      "cover": "/img/rvd/rogue_valley_door.png",
+      "cover": "/img/rvd/Rvd.png",
       "hero": "/img/rvd/RvdHeader.png",
       "sections": [
         {
@@ -102,13 +105,13 @@
           "content": [
             {
               "path": "../img/rvd/Rvd1.png",
-              "alt": "image",
+              "alt": "Rogue Valley Door Desktop Image",
               "effect": "none",
               "span": "md"
             },
             {
               "path": "../img/rvd/Rvd2.png",
-              "alt": "image",
+              "alt": "Rogue Valley Door Desktop Image",
               "effect": "none",
               "span": "md"
             }
@@ -120,13 +123,13 @@
           "content": [
             {
               "path": "../img/rvd/Rvd3.png",
-              "alt": "image",
+              "alt": "Rogue Valley Door Desktop Image",
               "effect": "none",
               "span": "md"
             },
             {
               "path": "../img/rvd/Rvd4.png",
-              "alt": "image",
+              "alt": "Rogue Valley Door Desktop Image",
               "effect": "none",
               "span": "md"
             }
@@ -138,13 +141,13 @@
           "content": [
             {
               "path": "../img/rvd/Rvd5.png",
-              "alt": "image",
+              "alt": "Rogue Valley Door Desktop Image",
               "effect": "none",
               "span": "md"
             },
             {
               "path": "../img/rvd/Rvd6.png",
-              "alt": "image",
+              "alt": "Rogue Valley Door Desktop Image",
               "effect": "none",
               "span": "md"
             }
@@ -156,20 +159,20 @@
           "content": [
             {
               "path": "../img/rvd/RvdP1.png",
-              "alt": "image",
-              "effect": "none",
+              "alt": "Rogue Valley Door Phone Image",
+              "effect": "phone",
               "span": "sm"
             },
             {
               "path": "../img/rvd/RvdP2.png",
-              "alt": "image",
-              "effect": "none",
+              "alt": "Rogue Valley Door Phone Image",
+              "effect": "phone",
               "span": "sm"
             },
             {
-              "path": "../img/rvd/RvdP3.png",
-              "alt": "image",
-              "effect": "none",
+              "path": "../img/rvd/RvdP1.png",
+              "alt": "Rogue Valley Door Phone Image",
+              "effect": "phone",
               "span": "sm"
             }
           ]
@@ -180,14 +183,14 @@
           "content": [
             {
               "path": "../img/rvd/RvdT1.png",
-              "alt": "image",
-              "effect": "none",
+              "alt": "Rogue Valley Door Tablet Image",
+              "effect": "tablet",
               "span": "md"
             },
             {
-              "path": "../img/rvd/RvdT2.png",
-              "alt": "image",
-              "effect": "none",
+              "path": "../img/rvd/RvdT1.png",
+              "alt": "Rogue Valley Door Tablet Image",
+              "effect": "tablet",
               "span": "md"
             }
           ]
@@ -198,7 +201,7 @@
       "kamp-grizzly": {
         "name": "Kamp Grizzly",
         "color": "rgb(128, 128, 128)",
-        "cover": "/img/kamp/kamp.png",
+        "cover": "/img/kamp/Kamp.png",
         "hero": "/img/kamp/KampHeader.png",
         "sections": [
           {
@@ -213,19 +216,19 @@
             "content": [
               {
                 "path": "../img/kamp/Kamp1.png",
-                "alt": "image",
+                "alt": "Kamp Grizzly Desktop Image",
                 "effect": "none",
                 "span": "lg"
               },
               {
                 "path": "../img/kamp/Kamp2.png",
-                "alt": "image",
+                "alt": "Kamp Grizzly Desktop Image",
                 "effect": "none",
                 "span": "md"
               },
               {
                 "path": "../img/kamp/Kamp3.png",
-                "alt": "image",
+                "alt": "Kamp Grizzly Desktop Image",
                 "effect": "none",
                 "span": "md"
               }
@@ -252,25 +255,25 @@
             "content": [
               {
                 "path": "../img/dvo/Dvo1.png",
-                "alt": "image",
+                "alt": "Dolly Varden Desktop Image",
                 "effect": "none",
                 "span": "lg"
               },
               {
                 "path": "../img/dvo/Dvo2.png",
-                "alt": "image",
+                "alt": "Dolly Varden Desktop Image",
                 "effect": "none",
                 "span": "md"
               },
               {
                 "path": "../img/dvo/Dvo3.png",
-                "alt": "image",
+                "alt": "Dolly Varden Desktop Image",
                 "effect": "none",
                 "span": "md"
               },
               {
                 "path": "../img/dvo/Dvo4.png",
-                "alt": "image",
+                "alt": "Dolly Varden Desktop Image",
                 "effect": "none",
                 "span": "lg"
               }
@@ -282,20 +285,20 @@
             "content": [
               {
                 "path": "../img/dvo/DvoP1.png",
-                "alt": "image",
-                "effect": "none",
+                "alt": "Dolly Varden Phone Image",
+                "effect": "phone",
                 "span": "sm"
               },
               {
                 "path": "../img/dvo/DvoP2.png",
-                "alt": "image",
-                "effect": "none",
+                "alt": "Dolly Varden Phone Image",
+                "effect": "phone",
                 "span": "sm"
               },
               {
                 "path": "../img/dvo/DvoP3.png",
-                "alt": "image",
-                "effect": "none",
+                "alt": "Dolly Varden Phone Image",
+                "effect": "phone",
                 "span": "sm"
               }
             ]
@@ -307,7 +310,7 @@
       "mitsubishi-electric": {
         "name": "Mitsubishi Electric",
         "color": "rgb(188, 188, 188)",
-        "cover": "/img/mit/woman.png",
+        "cover": "/img/mit/Mit.png",
         "hero": "/img/mit/MitHeader.png",
         "sections": [
           {
@@ -322,20 +325,20 @@
             "content": [
               {
                 "path": "../img/mit/MitP1.png",
-                "alt": "image",
-                "effect": "none",
+                "alt": "Mitsubishi Phone Image",
+                "effect": "phone",
                 "span": "sm"
               },
               {
                 "path": "../img/mit/MitP2.png",
-                "alt": "image",
-                "effect": "none",
+                "alt": "Mitsubishi Phone Image",
+                "effect": "phone",
                 "span": "sm"
               },
               {
                 "path": "../img/mit/MitP3.png",
-                "alt": "image",
-                "effect": "none",
+                "alt": "Mitsubishi Phone Image",
+                "effect": "phone",
                 "span": "sm"
               }
             ]
@@ -361,7 +364,7 @@
             "content": [
               {
                 "path": "../img/adidas/Adidas1.png",
-                "alt": "image",
+                "alt": "Adidas Desktop Image",
                 "effect": "none",
                 "span": "lg"
               }

@@ -116,7 +116,18 @@
       <template v-for='(i, image) in content'>
 
         <div class='section-image-cont' v-bind:class='image.span'>
-          <img v-bind:src='image.path' v-bind:alt='image.alt' />
+          <template v-if='image.effect && ((image.effect == "phone") || (image.effect == "tablet"))'>
+            <template v-if='image.effect == "phone"'>
+              <phone :path='image.path' :alt='image.alt'></phone>
+            </template>
+            <template v-else>
+              <tablet :path='image.path' :alt='image.alt'></tablet>
+            </template>
+          </template>
+
+          <template v-else>
+            <img v-bind:src='image.path' v-bind:alt='image.alt' />
+          </template>
         </div>
 
 
@@ -125,7 +136,18 @@
 
     <template v-if='type == "full"'>
       <div class='section-image-cont full' v-bind:class='content.span ? content.span : "lg"'>
+        <template v-if="typeof content.effect !== 'undefined'">
+          <template v-if='content.effect == "phone"'>
+            <phone :path='content.path' :alt='image.alt'></phone>
+          </template>
+          <template v-if='content.effect == "tablet"'>
+            <tablet :path='content.path' :alt='content.alt'></tablet>
+          </template>
+        </template>
+
+        <template v-else>
         <img v-bind:src='content.path' v-bind:alt='content.alt' />
+      </template>
       </div>
     </template>
 
@@ -137,8 +159,15 @@
 
 <script>
 
+    var Phone = require('./Phone.vue');
+    var Tablet = require('./Tablet.vue');
+
   module.exports = {
     name: 'ContentSection',
+    components:{
+      Phone,
+      Tablet
+    },
 
     props: [
       'type',
