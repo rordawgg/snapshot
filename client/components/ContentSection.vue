@@ -63,14 +63,24 @@
       }
     }  
     
+    .slider-cont {
+        margin-bottom: 115px;
+        -webkit-box-shadow:inset 0px 0px 0px 100px #f00;
+    -moz-box-shadow:inset 0px 0px 0px 100px #f00;
+    box-shadow:inset 0px 0px 0px 100px #f00;
       .slider {
+        position: absolute;
+        width: 100%;  
+        left: 0;
+        right: 0;
         overflow-x: scroll;
         white-space:nowrap;
         .slide{
           display: inline-block;
-          margin: 0 86px;
+          margin: 5px 86px;
         }
       }
+    }
 
     &:not(.paragraph) {
       text-align: center;
@@ -165,11 +175,13 @@
     </template>
 
     <template v-if='type == "slider"'>
+    <div class="slider-cont">
       <div class='slider'>
         <div class='slide' v-for='slide in content'>
           <img v-bind:src='slide.path'>
         </div>
       </div>
+    </div>
     </template>
 
   </div>
