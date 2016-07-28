@@ -13,24 +13,26 @@
     }
 
     a.contact-button {
-  		position: absolute;
-  		top: 13px;
-  		right: 15px;
-  		font-size: 1.125rem;
-  		z-index: 1003;
+      position: absolute;
+      top: 13px;
+      right: 15px;
+      font-size: 1.125rem;
+      z-index: 1003;
       color: #fff;
-  	}
+    }
 
     .corner {
       position: absolute;
-      left: 0;
-      height: 0;
-      border-right: 97px solid transparent;
-      clip-path: polygon(100% 0, 0 100%, 0 0);
+      top: -120;
+      left: -120;
+      width: 200px;
+      height: 200px;
+      transform: rotate(45deg);
     }
 
 
     .project-header {
+    overflow: hidden;
       @include make-col();
       @include make-col-span(12);
       box-sizing: border-box;
@@ -95,12 +97,12 @@
 <template>
   <header>
     <div v-bind:style='styles' class='project-header'>
-        <a v-link="'/home'">
-      <div v-bind:style='corner' class="corner"></div>
-      <div class='back-button'>
+      <a v-link="'/home'">
+      <div v-bind:style='corner' class='corner'></div>
+        <div class='back-button'>
           <img src='/img/back-arrow.png' alt='back' />
-        </a>
-      </div>
+      </a>
+        </div>
       <div class="contact-open">
         <a class='contact-button' href="/" v-on:click.stop.prevent='$dispatch("showContact")'>Contact</a>
       </div>
@@ -134,7 +136,7 @@
       });
 
       this.$set('corner', {
-        borderTop: '97px solid ' + this.color
+        backgroundColor: this.color
       });
     }
   }
