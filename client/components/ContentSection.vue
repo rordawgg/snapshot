@@ -65,6 +65,7 @@
       img {
         width: 100%;
       }
+<<<<<<< HEAD
     }  
     
     .slider-cont {
@@ -72,6 +73,10 @@
         -webkit-box-shadow:inset 0px 0px 0px 100px #f00;
     -moz-box-shadow:inset 0px 0px 0px 100px #f00;
     box-shadow:inset 0px 0px 0px 100px #f00;
+=======
+    }
+
+>>>>>>> Update phone and tablet components
       .slider {
         position: absolute;
         width: 100%;  
