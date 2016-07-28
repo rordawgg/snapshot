@@ -17,19 +17,25 @@
           "type": "slider",
           "content": [
             {
-              "path": "http://placehold.it/350x150",
+              "path": "http://placehold.it/350x650",
               "alt": "image",
               "effect": "none",
               "span": "md"
             },
             {
-              "path": "http://placehold.it/350x150",
+              "path": "http://placehold.it/350x650",
               "alt": "image",
               "effect": "none",
               "span": "md"
             },
             {
-              "path": "http://placehold.it/350x150",
+              "path": "http://placehold.it/350x650",
+              "alt": "image",
+              "effect": "none",
+              "span": "lg"
+            },
+            {
+              "path": "http://placehold.it/350x650",
               "alt": "image",
               "effect": "none",
               "span": "lg"

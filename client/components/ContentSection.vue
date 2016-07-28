@@ -68,22 +68,20 @@
     }
 
     .slider-cont {
-      margin-bottom: 115px;
-      -webkit-box-shadow:inset 0px 0px 0px 100px #f00;
-      -moz-box-shadow:inset 0px 0px 0px 100px #f00;
-      box-shadow:inset 0px 0px 0px 100px #f00;
-    }
 
-    .slider {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      right: 0;
-      overflow-x: scroll;
-      white-space:nowrap;
-      .slide{
-        display: inline-block;
-        margin: 5px 86px;
+      margin-bottom: 115px;
+
+      .slider {
+        width: 100%;  
+        left: 0;
+        right: 0;
+        overflow-x: scroll;
+        white-space:nowrap;
+        .slide{
+          display: inline-block;
+          margin: 5px 86px;
+        }
+
       }
     }
 
