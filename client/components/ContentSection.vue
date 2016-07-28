@@ -40,7 +40,7 @@
       margin-top: 54px;
 
       &.paragraph {
-        margin-bottom: 24px;
+        margin-bottom: calc(54px - 6vw);
       }
     }
 
@@ -65,29 +65,25 @@
       img {
         width: 100%;
       }
-<<<<<<< HEAD
-    }  
-    
-    .slider-cont {
-        margin-bottom: 115px;
-        -webkit-box-shadow:inset 0px 0px 0px 100px #f00;
-    -moz-box-shadow:inset 0px 0px 0px 100px #f00;
-    box-shadow:inset 0px 0px 0px 100px #f00;
-=======
     }
 
->>>>>>> Update phone and tablet components
-      .slider {
-        position: absolute;
-        width: 100%;  
-        left: 0;
-        right: 0;
-        overflow-x: scroll;
-        white-space:nowrap;
-        .slide{
-          display: inline-block;
-          margin: 5px 86px;
-        }
+    .slider-cont {
+      margin-bottom: 115px;
+      -webkit-box-shadow:inset 0px 0px 0px 100px #f00;
+      -moz-box-shadow:inset 0px 0px 0px 100px #f00;
+      box-shadow:inset 0px 0px 0px 100px #f00;
+    }
+
+    .slider {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      overflow-x: scroll;
+      white-space:nowrap;
+      .slide{
+        display: inline-block;
+        margin: 5px 86px;
       }
     }
 
@@ -96,11 +92,11 @@
     }
 
     @include media-breakpoint-up(md) {
-      margin: 0px -3vw calc(200px - 4vw) -3vw;
+      margin: 0px -3vw calc(200px - 6vw) -3vw;
 
       &:first-of-type {
         &.paragraph {
-          margin-bottom: 82px;
+          margin-bottom: calc(100px - 6vw);
         }
       }
 

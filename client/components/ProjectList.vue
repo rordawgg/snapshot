@@ -18,6 +18,7 @@
     @include media-breakpoint-up(lg) {
 			width: 94%;
       margin-top: 79px;
+      margin-bottom: 3vw;
 		}
 
     @include media-breakpoint-up(xl) {
