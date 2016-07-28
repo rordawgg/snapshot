@@ -122,7 +122,6 @@
 
 			contrast() {
 				this.$set('light', Color(this.bgColor).light());
-				console.log(this.light);
 			}
 		},
 

@@ -439,15 +439,28 @@
       {
         "title": "Inquiries",
         "fields": [
-          "email@snapshot.is",
+          {
+            "type": "link",
+            "display": "email@snapshot.is",
+            "to": "mailto:email@snapshot.is"
+          },
           "503-123-4567"
         ]
       },
       {
         "title": "Follow Us",
         "fields": [
-          "Twitter",
-          "Facebook"
+          {
+            "type": "link",
+            "display": "Twitter",
+            "to": "https://twitter.com/snapshot_is",
+            "newTab": "true"
+          },
+          {
+            "type": "link",
+            "display": "Facebook",
+            "to": "http://facebook.com"
+          }
         ]
       }
     ]
