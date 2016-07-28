@@ -1,4 +1,4 @@
-<style lang='scss' scoped>
+<style lang='scss'>
   @import '../styles/_main';
 
   .content-section {
@@ -10,8 +10,17 @@
       margin-bottom: 0;
     }
 
+    &.slider {
+      // @include make-container();
+      width: 100vw;
+    }
+
     &.paragraph {
       margin: 115px 0;
+
+      p {
+        margin: 0;
+      }
     }
 
     &.full {
@@ -72,7 +81,7 @@
       margin-bottom: 115px;
 
       .slider {
-        width: 100%;  
+        width: 100%;
         left: 0;
         right: 0;
         overflow-x: scroll;
@@ -138,18 +147,12 @@
       <template v-for='(i, image) in content'>
 
         <div class='section-image-cont' v-bind:class='image.span'>
-          <template v-if='image.effect && ((image.effect == "phone") || (image.effect == "tablet"))'>
-            <template v-if='image.effect == "phone"'>
-              <phone :path='image.path' :alt='image.alt'></phone>
-            </template>
-            <template v-else>
-              <tablet :path='image.path' :alt='image.alt'></tablet>
-            </template>
-          </template>
-
-          <template v-else>
-            <img v-bind:src='image.path' v-bind:alt='image.alt' />
-          </template>
+          <image-effect-controller
+            :effect='image.effect'
+            :path='image.path'
+            :alt='image.alt'
+            :span='image.span'>
+            </image-effect-controller>
         </div>
 
 
@@ -158,18 +161,14 @@
 
     <template v-if='type == "full"'>
       <div class='section-image-cont full' v-bind:class='content.span ? content.span : "lg"'>
-        <template v-if="typeof content.effect !== 'undefined'">
-          <template v-if='content.effect == "phone"'>
-            <phone :path='content.path' :alt='image.alt'></phone>
-          </template>
-          <template v-if='content.effect == "tablet"'>
-            <tablet :path='content.path' :alt='content.alt'></tablet>
-          </template>
-        </template>
 
-        <template v-else>
-        <img v-bind:src='content.path' v-bind:alt='content.alt' />
-      </template>
+        <image-effect-controller
+          :effect='content.effect'
+          :path='content.path'
+          :alt='content.alt'
+          :span='content.span'>
+          </image-effect-controller>
+
       </div>
     </template>
 
@@ -191,15 +190,14 @@
 </template>
 
 <script>
-
-    var Phone = require('./Phone.vue');
-    var Tablet = require('./Tablet.vue');
+  var ImageEffectController = require('./ImageEffectController.vue');
+  var Phone = require('./Phone.vue');
+  var Tablet = require('./Tablet.vue');
 
   module.exports = {
     name: 'ContentSection',
     components:{
-      Phone,
-      Tablet
+      ImageEffectController
     },
 
     props: [

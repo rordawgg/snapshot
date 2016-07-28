@@ -249,19 +249,19 @@
               {
                 "path": "../img/kamp/Kamp1.png",
                 "alt": "Kamp Grizzly Desktop Image",
-                "effect": "none",
+                "effect": "top-bar",
                 "span": "lg"
               },
               {
                 "path": "../img/kamp/Kamp2.png",
                 "alt": "Kamp Grizzly Desktop Image",
-                "effect": "none",
+                "effect": "top-bar",
                 "span": "md"
               },
               {
                 "path": "../img/kamp/Kamp3.png",
                 "alt": "Kamp Grizzly Desktop Image",
-                "effect": "none",
+                "effect": "top-bar",
                 "span": "md"
               }
             ]

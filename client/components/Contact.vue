@@ -2,13 +2,17 @@
 	@import '../styles/_main';
 
 	.contact-close{
-		float: right;
-		padding-top: 61px;
-		padding-right: 92px;
+		position: absolute;
+		top: 0;
+		right: 0;
+
 		a {
+			display: block;
 			color: $primary;
 			text-decoration: none;
 			font-size: 1.2rem;
+			padding-top: 61px;
+			padding-right: 92px;
 		}
 	}
 	.contact-cont {
