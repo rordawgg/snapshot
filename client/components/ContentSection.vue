@@ -6,6 +6,10 @@
     overflow: hidden;
     margin: 0px -9vw calc(115px - 6vw) -9vw;
 
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
     &.paragraph {
       margin: 115px 0;
     }
@@ -44,7 +48,7 @@
       @include make-col();
       box-sizing: border-box;
       vertical-align: middle;
-      padding: 3vw;
+      padding: 6vw 3vw 0 3vw;
 
       &.sm {
         @include make-col-span(4);
@@ -97,7 +101,7 @@
 
       .section-image-cont {
         // margin: -2vw auto;
-        padding: 2vw;
+        padding: 6vw 3vw 0 3vw;
       }
 
       &.paragraph {
