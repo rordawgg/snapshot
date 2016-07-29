@@ -1,4 +1,4 @@
-<style lang='scss' scoped>
+<style lang='scss'>
   @import '../styles/_main';
 
   .content-section {
@@ -6,8 +6,21 @@
     overflow: hidden;
     margin: 0px -9vw calc(115px - 6vw) -9vw;
 
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &.slider {
+      // @include make-container();
+      width: 100vw;
+    }
+
     &.paragraph {
       margin: 115px 0;
+
+      p {
+        margin: 0;
+      }
     }
 
     &.full {
@@ -36,7 +49,7 @@
       margin-top: 54px;
 
       &.paragraph {
-        margin-bottom: 24px;
+        margin-bottom: calc(54px - 6vw);
       }
     }
 
@@ -44,7 +57,7 @@
       @include make-col();
       box-sizing: border-box;
       vertical-align: middle;
-      padding: 3vw;
+      padding: 6vw 3vw 0 3vw;
 
       &.sm {
         @include make-col-span(4);
@@ -63,22 +76,40 @@
       }
     }
 
+    .slider-cont {
+
+      margin-bottom: 115px;
+
+      .slider {
+        width: 100%;
+        left: 0;
+        right: 0;
+        overflow-x: scroll;
+        white-space:nowrap;
+        .slide{
+          display: inline-block;
+          margin: 5px 86px;
+        }
+
+      }
+    }
+
     &:not(.paragraph) {
       text-align: center;
     }
 
     @include media-breakpoint-up(md) {
-      margin: 0px -3vw calc(200px - 4vw) -3vw;
+      margin: 0px -3vw calc(200px - 6vw) -3vw;
 
       &:first-of-type {
         &.paragraph {
-          margin-bottom: 82px;
+          margin-bottom: calc(100px - 6vw);
         }
       }
 
       .section-image-cont {
         // margin: -2vw auto;
-        padding: 2vw;
+        padding: 6vw 3vw 0 3vw;
       }
 
       &.paragraph {
@@ -116,7 +147,12 @@
       <template v-for='(i, image) in content'>
 
         <div class='section-image-cont' v-bind:class='image.span'>
-          <img v-bind:src='image.path' v-bind:alt='image.alt' />
+          <image-effect-controller
+            :effect='image.effect'
+            :path='image.path'
+            :alt='image.alt'
+            :span='image.span'>
+            </image-effect-controller>
         </div>
 
 
@@ -125,24 +161,49 @@
 
     <template v-if='type == "full"'>
       <div class='section-image-cont full' v-bind:class='content.span ? content.span : "lg"'>
-        <img v-bind:src='content.path' v-bind:alt='content.alt' />
+
+        <image-effect-controller
+          :effect='content.effect'
+          :path='content.path'
+          :alt='content.alt'
+          :span='content.span'>
+          </image-effect-controller>
+
       </div>
     </template>
 
     <template v-if='type == "paragraph"'>
       <p v-for='paragraph in content'>{{ paragraph }}</p>
     </template>
+
+    <template v-if='type == "slider"'>
+    <div class="slider-cont">
+      <div class='slider'>
+        <div class='slide' v-for='slide in content'>
+          <img v-bind:src='slide.path'>
+        </div>
+      </div>
+    </div>
+    </template>
+
   </div>
 </template>
 
 <script>
+  var ImageEffectController = require('./ImageEffectController.vue');
+  var Phone = require('./Phone.vue');
+  var Tablet = require('./Tablet.vue');
 
   module.exports = {
     name: 'ContentSection',
+    components:{
+      ImageEffectController
+    },
 
     props: [
       'type',
-      'content'
+      'content',
+      'color'
     ]
   }
 </script>

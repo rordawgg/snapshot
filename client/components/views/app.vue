@@ -27,6 +27,11 @@
 
 	#content {
 		transition: all 200ms, color 50ms;
+		// padding-bottom: 115px;
+		//
+		// @include media-breakpoint-up(md) {
+		// 	padding-bottom: 200px;
+		// }
 	}
 
 	.fade-transition {
@@ -117,7 +122,6 @@
 
 			contrast() {
 				this.$set('light', Color(this.bgColor).light());
-				console.log(this.light);
 			}
 		},
 

@@ -16,6 +16,16 @@
 			font-size: .8125rem;
 			font-family: 'Avenir-Black';
 		}
+
+		ul li {
+			a {
+				color: #fff;
+
+				&:hover {
+					color: darken(#fff, 20%);
+				}
+			}
+		}
 	}
 </style>
 
@@ -24,7 +34,22 @@
 		<h1>{{ item.title }}</h1>
 		<ul>
 			<li v-for='field in item.fields'>
-				{{ field }}
+				<template v-if='typeof field == "object"'>
+					<template v-if='field.type == "link"'>
+						<a
+							:href='field.to'
+							:target='field.newTab ? "_blank" : ""'
+							>{{ field.display }}</a>
+					</template>
+
+					<template v-if='(field.type == undefined) || (field.type == "regular")'>
+						{{ field }}
+					</template>
+				</template>
+
+				<template v-else>
+					{{ field }}
+				</template>
 			</li>
 		</ul>
 	</div>
